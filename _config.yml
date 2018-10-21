@@ -16,7 +16,7 @@ colors:  #in hex code if not noted else
   primary: "#f67031" #"#F70031"
   primary_rgb: "246,112,49" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
   secondary: "#384452" #"#33004D"
-  link: "#428bca"
+  link: "#ffa400" #"#428bca"
   link_hover: "#01b2fe"
   footer_heading: "#ffffff"
   footer_content: "#bfc9d3"
@@ -44,11 +44,9 @@ social:
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
   - lines:
-    - Norra Obbolavägen 112A,
-    - 904 22, Umeå,
-    - Sweden.
-email: ops@shimmercat.com
-tel: +4670 485 1947
+    - Norra Obbolavägen 112A, 904 22, Umeå, Sweden
+    - ops@shimmercat.com
+    - +4670 485 1947
 
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
