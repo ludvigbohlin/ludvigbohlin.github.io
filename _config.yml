@@ -104,14 +104,16 @@ members:
 
 # Clients information. Shown on Home and About pages.
 clients:
-  - name: 
-    img: client_blank.png
+  - name: ALMI
+    img: almi.png
   - name: Outdoorexperten
     img: client01.png
   - name: Easytryck
     img: client02.png
-  #- name: RiviaSports
-  #  img: client03.png
+  - name: Internetfonden
+    img: internetfonden.png
+  #- name: Uminova
+  #  img: uminova.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
 about: "ShimmerCat provides an automatic way of going beyond handmade conventional optimizations, at a fraction of the cost and with transparent results. Are you ready for the future of web accelerators?"
