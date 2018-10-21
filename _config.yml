@@ -44,9 +44,11 @@ social:
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
   - lines:
-    - Norra Obbolavägen 112A, 904 22, Umeå, Sweden
-    - ops@shimmercat.com
-    - +4670 485 1947
+    - Norra Obbolavägen 112A,
+    - 904 22, Umeå,
+    - Sweden.
+email: ops@shimmercat.com
+tel: +4670 485 1947
 
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
