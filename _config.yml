@@ -53,53 +53,35 @@ tel: +4670 485 1947
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
 
-# Members information. Shown on About page.
-members:
-  - name: Mark Webber
-    position: CEO
+# Office information. Shown on Contact page.
+offices:
+  - name: Tampa
+    position: W Perdiz ST, Tampa, FL
     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team01.jpg
+    img: office01.jpg
     social:
       - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-  - name: Paul Jameson
-    position: Lead Designer
+        url: mailto:ops@shimmercat.com
+      #- title: twitter
+      #  url: http://twitter.com/handle
+  - name: Umeå
+    position: ShimmerCat HQ
     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team02.jpg
+    img: office02.jpg
     social:
       - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-  - name: Laura Sommers
-    position: Lead Developer
+        url: mailto:ops@shimmercat.com
+      #- title: twitter
+      #  url: http://twitter.com/handle
+  - name: Stockholm
+    position: Grev Turegatan 19
     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team03.jpg
+    img: office03.jpg
     social:
       - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-  - name: Martin Blunt
-    position: Marketing
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team04.jpg
-    social:
-      - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-  - name: Martin Blunt
-    position: Marketing
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team04.jpg
-    social:
-      - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
+        url: mailto:ops@shimmercat.com
+      #- title: twitter
+      #  url: http://twitter.com/handle
 
 
 # Clients information. Shown on Home and About pages.
