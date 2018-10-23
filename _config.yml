@@ -4,8 +4,8 @@
 title: SHIMMERCAT
 description: "ShimmerCat is a disruptive web accelerator solution that help e-commerce reduce loading times with 30-60%."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "" #important: start with / #/ludvigbohlin.github.io
-url: "http://www.shimmercat.com"
+baseurl: "" #important: start with / #/ludvigbohlin.github.io #prepends images, etc
+url: "ludvigbohlin.github.io" #"http://www.shimmercat.com"
 
 # Build settings
 markdown: kramdown
