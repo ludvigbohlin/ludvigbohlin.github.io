@@ -1,4 +1,4 @@
-Solid. A Bootstrap theme for Jekyll.
+ShimmerCat website. Using solid - a Bootstrap theme for Jekyll.
 ============
 This is a [Jekyll](http://jekyllrb.com/) port of the [Solid theme](http://www.blacktie.co/2014/05/solid-multipurpose-theme/) by [blacktie.co](http://www.blacktie.co/).
 
