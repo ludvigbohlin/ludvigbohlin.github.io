@@ -1,0 +1,84 @@
+
+<div class="container mtb">
+    <div class="row centered">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">        
+            <h3 class="mb">The story of ShimmerCat</h3>
+            <p><b>Cats run the Internet.</b> Cat memes, cat photos, and cat videos make up some of the most viewed content on the web. This kind of content was probably not what the people who created the web had in mind when they laid the foundation for future information exchange. But while cats in some sense are part of the challenges the Internet today, we think that a cat also can be the solution.</p>
+            <p>The web has changed a lot since it first arrived in the beginning of the 90's, and these changes have created new challenges that no one could have foreseen when they laid the foundation of Internet communication. To cope with these challenges, ShimmerCat was started in the north of Sweden a few years ago.</p>
+
+            <p><b>In 2016, mobile internet usage surpassed desktop usage for the first time in history!</b> This fact is remarkable, and it shows how fast the evolution of information technology moves. To illustrate this, we have created the pictures above showing how this website most likely would have looked and changed over time it would have started in 1991. Do you recognize the design?</p>
+
+        </div>
+        <div class="col-sm-3"></div>
+    </div><! --/row -->
+</div><! --/container -->
+
+
+<div class="container mtb">
+    <div class="row centered">
+    <h4 class="mb">Website development</h4>
+
+       
+        {% for website in site.websites %}
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="he-wrap tpl6">
+            <img src="{{ "/assets/img/websites/" | prepend: site.baseurl }}{{ website.img }}" alt="">
+                <div class="he-view">
+                    <div class="bg a0" data-animate="fadeIn">
+                    </div><!-- he bg -->
+                </div><!-- he view -->		
+            </div><!-- he wrap -->
+            <h4>{{ website.name }}</h4>
+            <h5 class="ctitle">{{ website.position }}</h5>
+            <p>{{ website.text }}</p>
+            <div class="hline"></div>
+        </div><! --/col-lg-3 -->	 	
+        {% endfor %}
+    </div><! --/row -->
+</div><! --/container -->
+
+
+<div class="container mtb">
+    <div class="row centered">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6"> 
+
+
+        <p>The development of the web and it's technology is sometimes divided into stages:</p>
+
+        <ul>
+            <li><b>Web 1.0</b>: Being the first stage in the World Wide Web, with a set of static websites that were not yet providing interactive content (From around 1991)</li>
+            <li><b>Web 2.0</b>: Being the second generation of the World Wide Web that focused on the ability for people to collaborate and share information online. (From around 2004)</li>
+        </ul>
+
+        With the fast change towards increasing mobile usage and with it a completely different usage, some claim that we are about to enter a new stage:
+        
+        <ul>
+            <li><b>Web 3.0</b>: Being the third generation of the World Wide Web focused on an intelligent and more personalized web with elements of machine learning and artificial intelligence connected.</li>
+        </ul>
+        
+        <p>If the transformation to Web 3.0 is true remains to be seen, but it raises an interesting question of whether the technology behind this potential transition to a new stage has kept up with the changes?</p>
+
+        <p>The short answer is no.</p>
+
+        <p>The web has dramatically evolved over the last 20+ years, yet HTTP - the workhorse of the web - has not. During these twenty years many things have changed: web pages have gotten bigger, Internet access have gone from wire-connected desktop to mobile devices, and web contents have changed from being flat to complex interactive experiences. At the same time, website developers and operators value more and more the experience that their users have while visiting their sites, with a special focus on swiftness and speed.</p>
+
+        <p>However, web servers, the programs serving contents to final users, have changed their basic mode of operation very little. They continue being mostly passive programs that just serve requested contents without any regard for the general purpose of the user: to access a complete web page in the shortest time possible.</p>
+
+        <p>Every day, more and more people are using tablets and phones to access the Internet and websites can no longer rely on the Internet speed provided by a cable directly connected to a computer. This is a problem that technological giants like Google, Facebook and Microsoft have been talking about for some time. They have gone further and built part of the solution, in the form of a new protocol for connecting the users with the websites. Their work was summarized in a new standard that was finished in 2015, called HTTP/2.</p>
+
+        <p>This new standard supersedes the old one, which is called HTTP/1.1. The new standard allows people to do the same old tricks that the old standard could do, plus a few more. And the start of HTTP/2 was also the start of ShimmerCat.</p>
+
+        <p>We wanted to build a web server which takes into account the typical needs of today and tomorrow websites. If you ever have felt frustrated over a slow loading website on your smartphone, you know what what we are talking about.</p>
+
+        <p>Basically, ShimmerCat was built to help people to have faster websites and web applications. We love simple things that work well, and we think that technology doesn't have to be hard. When it comes to websites, and specially fast websites, the existing tools tend to benefit people who has a technical background and has invested a lot of time into them and have a technical. With ShimmerCat and ShimmerCat for Business we want to overcome that, and provide a web server that can be used by everybody to create secure, modern and fast websites.</p>
+
+        <p>Fast websites for everyone, on any device, anywhere in the world.</p>
+
+        <p>/The ShimmerCat team</p>
+
+        </div>
+        <div class="col-sm-3"></div>
+    </div><! --/row -->
+</div><! --/container -->

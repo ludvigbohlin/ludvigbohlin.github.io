@@ -83,6 +83,20 @@ offices:
       #- title: twitter
       #  url: http://twitter.com/handle
 
+# Webiste development information. Shown on About page.
+websites:
+  - name: 1991
+    img: 1991.jpg
+  - name: 1995
+    img: 1995.jpg
+  - name: 1999
+    img: 1999.jpg
+  - name: 2003
+    img: 2003.jpg
+  - name: 2011
+    img: 2011.jpg
+  - name: 2013
+    img: 2013.jpg
 
 # Clients information. Shown on Home and About pages.
 clients:
