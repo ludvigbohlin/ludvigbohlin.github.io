@@ -5,7 +5,6 @@ This is a [Jekyll](http://jekyllrb.com/) port of the [Solid theme](http://www.bl
 ##Usage
 This theme can be customized, built and published straight from GitHub, thanks to [GitHub Pages](https://pages.github.com/). A local installation of Jekyll isn't even necessary!
 
-
 ####Customize  
 Most general settings and data like site name, colors, address, etc. can be configured and changed right in the main config file: `/_config.yml`
 The content of the Home page can be changed here: `/index.html`
@@ -34,24 +33,12 @@ This text will appear in the excerpt "post preview" on the Blog page that lists 
 <!--more-->
 This text will not be shown in the excerpt because it is after the excerpt separator.
 ```
-#####Project post
-Create a Project post about ShimmerCat by creating a file called `yyyy-mm-dd-name-of-the-project.markdown` in the `/_projects/` directory with the following template:
+#####Feature entry
+Create a Feature entry about ShimmerCat by creating a file called `yyyy-mm-dd-name-of-the-feature.markdown` in the `/_features/` directory with the following template:
 ```markdown
 ---
-layout: project       #important: don't change this
+layout: feature       #important: don't change this
 title:  "Name of the project"
-date: yyyy-mm-dd hh:mm:ss
-author: Name
-categories:
-- project             #important: leave this here
-img: portfolio_10.jpg #place image (600x450) with this name in /assets/img/project/
-thumb: thumb02.jpg
-carousel:
-- single01.jpg        #place image (1280x600) with this name in /assets/img/project/carousel/
-- single02.jpg  
-- ...
-client: Company XY
-website: http://www.internet.com
 ---
 ####This is a heading
 This is a regular paragraph. Write as much as you like.
@@ -65,7 +52,7 @@ title:  "Do I have a question?"
 date: yyyy-mm-dd hh:mm:ss
 author: First Last
 categories:
-- question            #important: leave this here
+- question
 ---
 ####Can I use this theme for my website?
 Of course you can!

@@ -23,9 +23,6 @@ colors:  #in hex code if not noted else
 
 # Making projects separate from posts
 collections:
-  projects:
-    output: true
-    permalink: /projects/:title/
   questions:
     output: true
     permalink: /questions/:title/
