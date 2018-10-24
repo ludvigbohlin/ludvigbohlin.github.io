@@ -34,12 +34,27 @@ permalink: /
 
 {% include accelerator.html title="FEATURES AND INFO" limit=10 %}
 
+
+<!-- <div class="container">
+<div class="container-fluid no-padding">
+  <div class="row">
+    <div class="col-md-12">
+      <img class='img-fluid w-100' src="{{ "/assets/img/road.jpg" | prepend: site.baseurl }}" class="img-responsive" />
+    </div>
+  </div>
+</div>
+
+</div><! -->
+
+
+
+
 <div class="container mtb">
     <div class="row">
         <div class="col-lg-4 col-lg-offset-1">
-            <h4>More About ShimmerCat.</h4>
+            <h4>More About ShimmerCat</h4>
             <p>{{ site.about }}</p>
-            <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
+            <p><br/><a href="{{ "/accelerator/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
         </div>
 
         <div class="col-lg-3">
@@ -51,7 +66,7 @@ permalink: /
         </div>
 
         <div class="col-lg-3">
-            <h4>Latest Posts</h4>
+            <h4>Latest Blog Posts</h4>
             <div class="hline"></div>
             {% for post in site.posts limit:5 %}
                 <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
@@ -60,3 +75,4 @@ permalink: /
 
     </div><! --/row -->
 </div><! --/container -->
+

@@ -29,6 +29,9 @@ collections:
   questions:
     output: true
     permalink: /questions/:title/
+  features:
+    output: true
+    permalink: /features/:title/
 
 ### CONTACT SETTINGS ###
 
