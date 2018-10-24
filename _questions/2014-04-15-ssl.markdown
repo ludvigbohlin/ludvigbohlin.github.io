@@ -1,0 +1,10 @@
+---
+layout: question
+title:  "What about SSL Certificates?"
+date:   2014-04-25 16:54:46
+author: ShimmerCat team
+categories:
+- question
+---
+ShimmerCat does TLS termination and needs access to a SSL certificate for the served site. ShimmerCat combines the TLS and HTTP/2 fingerprints of the peer to do small adjustments specific to the visitor's browser, and to help separate human and bot activity.
+
