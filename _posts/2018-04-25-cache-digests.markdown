@@ -5,7 +5,7 @@ date: 2018-04-25 16:54:46
 author: ShimmerCat's team
 categories:
 - blog
-- HTTP/2 push
+- HTTP2 push
 - Cache Digests
 img: serverpush.jpg
 thumb: serverpush_thumb.jpg

@@ -1,0 +1,81 @@
+---
+layout: post
+title: "The website optimization toolbox for e-commerce"
+date: 2018-04-25 16:54:46
+author: ShimmerCat's team
+categories:
+- blog
+- HTTP2 push
+img: toolbox.jpg
+thumb: toolbox_thumb.jpg
+---
+
+#### Summary
+All of these tools can be used to reduce website loading times:
+
+- Browser caching
+- Proxy caching (CDNs, Varnish)
+- Asset compression (GZip vs Brottli vs Custom, and different levels of compression)
+- Image optimization, delivery, and resolution adjustment for correct viewport size
+- HTTP/2 server push and resource priorities
+- Service workers and advanced offline and in-advance-caching strategies
+- Asset minification.
+
+Quite a few tools with  a lot of knobs and handles! At this moment, you probably are imagining that optimizing websites is the equivalent of navigating your way through this panel:
+
+<img class="full-width" src="{{ "/assets/img/blog/other/many_buttons.jpg" | prepend: site.baseurl }}" width="80%" height="auto">
+
+Why so many knobs and handles?
+
+Despite the best efforts of the techies creating these technologies, the matter is that there are no universal combinations that work everywhere and for everybody. Better to show why, let’s go for a bird’s eye of each of the techniques and what are the things to watch out  with each one!
+
+## Browser caching
+This is one of the simplest. Browser caching is a very old mechanism that saves some files from a website locally, so that they are available in further visits.
+
+**Configuration challenge with browser caching:**  to estimate for how long the file should be cached. If the site needs to use a new version of the file and the browser has saved an old version, then there is some risk that the page will look wrong or won’t work at all. To prevent this, the site can indicate that files should be saved for a shorter period, but then browser caching becomes less useful.
+
+There are good practices that eliminate the configuration dilemma, but in practice, developers seldom follow them. We know this from direct experience with the sites we run.
+
+## Proxy caching
+Proxy caching is when there is an agent between the web application (origin) and the browser that saves the files for some time. Doing so offloads traffic from the origin, which makes sense if the servers are having trouble to handle that traffic.
+
+**Configuration challenge with browser caching:**  proxy caching presents the same challenge than browser caching: to estimate for how long the file should be cached. Incorrect configuration also causes the same problems, though in a larger scale. With browser caching, only the user that had an old version of the file cached will be affected, but with an incorrectly configured proxy, all users will be affected.
+
+## Asset compression
+Compressing some of the files that are part of the website results in huge gains. The files that are usually compressed contain text, and there are already good algorithms and a body of research on them. When deploying asset compression, there are basically two criteria: how fast the algorithm works, and how well it compresses the input. Those two things are for example represented in the graphs on this page.
+
+There is still a third constraint to consider: browser support. While one of the algorithms, DEFLATE, is universally supported, there is a better compression format, Brotli, which is which also has wide support, with only Safari lagging behind. The  difference in format support is usually not an issue, because browsers always inform the server about which formats they support via the “Accept-Encoding” header.
+
+Yet, native support for a compression format may become less relevant in the near future. Due to the existence of Service Workers and WebAssembly, developers and sites can already opt to implement their own compression algorithms and deploy them to website visitors.
+
+**Configuration challenge for asset compression:** without taking into account formats made available through Service Workers and WebAssembly, asset compression presents relatively mild challenges and a well-beaten implementation path. But when taking into account the new formats, things can get more complicated, depending on the format itself. For example, Google’s SDCH algorithm requires the server to have a good knowledge of the entire site.
+
+## Image optimization, delivery, and resolution adjustment for correct viewport size
+Images represent the bulk of an e-commerce website, by size. Furthermore, they  impact conversion rates in more than one way; in one hand, good, sharp images can inform the decision of a customer to make a purchase.  In the other hand, a site with large high-resolution images make take longer to load and “drop” mobile users. Talking of mobile users, they usually access the site from devices with unique resolutions and screen sizes, which further complicates the quality-size slider.
+
+Beyond image size, the order in which the bytes of the image arrive to the browser also makes a difference in loading times: ideally, images should be prioritized in a way that favours uses experience, with more important images coming first.
+
+Here again service workers and WebAssembly add an extra-dimension by making available new compression formats.
+
+**Configuration challenge for images:** finding the sweet spot between image quality and size taking into account image format, ensuring that browsers get the best image for their viewport size and resolution, and knowing which images a site needs to prioritize.
+
+## HTTP/2 server push and resource priorities
+HTTP/2 is relatively new, but it’s the first version of the ubiquitous HTTP protocol where the server can proactively decide which assets the browser needs before it gets the requests from the browser. HTTP/2 Push can be used to reduce significantly the effect of network latency, therefore decreasing loading times in some cases up to 60%.
+
+To understand why this technique requires  deep knowledge of the the particular website where it is deployed and the website visitor, let’s take a look to a few concrete scenarios:
+
+#### Using HTTP/2 Push with first time visitor
+The visitor has never been to the website, so he/she is likely to need to download all the stylesheets and scripts. If the visitor is accessing the site through a high-latency connection,  it would be possible to push almost all the script and stylesheets. Now, for this to not introduce delays with the way HTTP/2 (or more precisely, the TCP protocol below it and its slow start phase) works, it is a good idea to push all those scripts and css only if we know that the main HTML file will take a comparable amount of time to start coming from the the web application. On the other hand, a small number of script and css files is always safe to push, even if the files themselves are big.
+
+#### Using HTTP/2 Push with a returning visitor
+
+A repeated visitor may already have in his/her cache  the scripts and styles of the site, so there is no point in pushing them. What about other assets that the user has not seen yet, like images? Well, those can be pushed, if the site knows where they are!
+
+## Service workers
+Service workers are special scripts that work from the browser and that can intercept and fulfill web requests. We already talked about their potential to implement new compression formats for text and images. Service workers can also be used to provide offline experiences, or to preload relatively small contents, like text content from articles in a blog.
+
+In general, service workers provide a lot of freedom to sites, but they have some major disadvantages due to being a relatively new technology. For one, stock web applications themselves rarely make use of them, so you need to hire your own developer to implement them for you. Also, a lot of browsers don’t support web workers yet, so the return on investment can be lower.
+
+## Conclusion
+We focused only on the configuration challenges of each of the techniques, and purposely omitted as much as possible disadvantages that some of these techniques have, we probably will write a few posts to cover them in depth later. Until then, hasta la vista!
+

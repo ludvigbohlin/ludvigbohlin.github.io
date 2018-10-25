@@ -5,7 +5,7 @@ date: 2018-04-25 16:54:46
 author: ShimmerCat's team
 categories:
 - blog
-- HTTP/2 push
+- HTTP2 push
 img: simple_browser_screenshot.jpg
 thumb: simple_browser_screenshot_thumb.jpg
 ---
