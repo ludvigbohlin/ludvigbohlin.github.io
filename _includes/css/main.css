@@ -146,6 +146,22 @@ a:focus {
 	font-size: 12px;
 }
 
+.btn-theme_yellow {
+  color: #fff;
+  background-color: {{ site.colors.secondary }};
+  border-color: {{ site.colors.secondary }};
+  margin: 4px;
+}
+.btn-theme_yellow:hover,
+.btn-theme_yellow:focus,
+.btn-theme_yellow:active,
+.btn-theme_yellow.active,
+.open .dropdown-toggle.btn-theme_yellow {
+  color: #fff;
+  background-color: {{ site.colors.link }};
+  border-color: {{ site.colors.link }};
+}
+
 .btn-theme {
   color: #fff;
   background-color: {{ site.colors.secondary }};
