@@ -14,3 +14,11 @@ ShimmerCat uses HTTP/2 Push in conjunction with cache digests and asset predicti
 
 #### How does HTTP/2 Push work with caching?
 The short answer is that it works well: if a resource is in the browser's cache, there are ways to avoid pushing it. Our implementation of HTTP/2 Push is very good at avoiding reiterated push.
+
+
+#### Waterfall view
+
+Below you can see the effect of HTTP/2 Push in a waterfall view:
+
+<img class="full-width" src="{{ "/assets/img/features/waterfallview.svg" | prepend: site.baseurl }}" width="80%" height="auto">
+
