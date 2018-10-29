@@ -1,6 +1,6 @@
 ---
 layout: feature
-title:  "Bot blocking"
+title:  "Bot Blocking"
 ---
 Bots account for a large amount of traffic in many e-commerce websites. The problem is that they take resources and make the site slow.
 By having machine-learning separate bad bots from good bots and human visitors, ShimmerCat can allocate more resources to human visitors to make the website load faster for them.
