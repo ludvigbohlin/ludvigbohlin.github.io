@@ -36,8 +36,8 @@ body {
 	}
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 400;
 }
 
 p { 
@@ -98,28 +98,37 @@ a:focus {
 	text-align: center
 }
 
+/* Simplest Case */
+.headerbox {
+  background: linear-gradient(orange, white);
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
 /*	################################################################
 	BOOTSTRAP MODIFICATIONS & TWEAKS
 ################################################################# */
 .navbar {
 	min-height: 70px;
-	padding-top: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	margin-bottom: 0px;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 .navbar-brand {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 900;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 600;
 }
 
 .navbar-header .navbar-brand {
-	color: white;
+	color: {{ site.colors.secondary }};
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: white;
+	color: {{ site.colors.secondary }};
 	font-weight: 700;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -132,8 +141,8 @@ a:focus {
 }
 
 .navbar-default {
-	background-color: {{ site.colors.secondary }};
-	border-color: transparent;
+	background-color: white;
+	border-color: grey;
 }
 
 .dropdown-menu {
@@ -228,16 +237,105 @@ a:focus {
 	border-bottom: 2px solid {{ site.colors.secondary }};
 }
 
+.hline-white {
+	border-bottom: 2px solid white;
+}
+
 .hline-w {
 	border-bottom: 2px solid #ffffff;
 	margin-bottom: 25px;
 }
+
+/*	################################################################
+	GRADIENT BOXES
+################################################################# */
+#orangewrap {
+	background-color: #f67031;
+	background: linear-gradient(to top right,#f67031 50%, #f57d44, #f69465);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 500px;
+	color: white
+}
+
+#purplewrap {
+	background-color: #ae31f6;
+	background: linear-gradient(to top right,#ae31f6 50%, #bd5af6, #ce89f5);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 500px;
+	color: white
+}
+
+#bluewrap {
+	background-color: #31bef6;
+	background: linear-gradient(to top right,#31bef6 50%, #49c5f6, #9adbf5);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 500px;
+	color: white
+}
+
+#yellowwrap {
+	background-color: #f6d231;
+	background: linear-gradient(to top right,#f6d231 50%, #f5d546, #f8f0cc);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 500px;
+	color: white
+}
+
+.btn-orange {
+  color: #f67031;
+  background-color: white;
+  border-color: none;
+  margin: 10px;
+  bottom: 5px;
+  position: absolute;
+}
+
+.btn-purple {
+  color: #ae31f6;
+  background-color: white;
+  border-color: none;
+  margin: 10px;
+  bottom: 5px;
+  position: absolute;
+}
+
+.btn-blue {
+  color: #31bef6;
+  background-color: white;
+  border-color: none;
+  margin: 10px;
+  bottom: 5px;
+  position: absolute;
+}
+
+.btn-yellow {
+  color: #f6d231;
+  background-color: white;
+  border-color: none;
+  margin: 10px;
+  bottom: 5px;
+  position: absolute;
+}
+
 /*	################################################################
 	SITE WRAPS
 ################################################################# */
 
 #headerwrap {
 	background-color: {{ site.colors.primary }};
+	background: linear-gradient(to top right,{{ site.colors.primary }} 50%, #f57d44, #f69465);
 	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;

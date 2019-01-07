@@ -1,7 +1,7 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title: SHIMMERCAT
+title: SHIMMERCAT - Faster e-commerce with AI and automation
 description: "ShimmerCat is a disruptive web accelerator solution that help e-commerce reduce loading times with 30-60%."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "/ludvigbohlin.github.io" #important: start with / #/ludvigbohlin.github.io #prepends images, etc
@@ -16,7 +16,7 @@ colors:  #in hex code if not noted else
   primary: "#f67031" #"#F70031"
   primary_rgb: "246,112,49" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
   secondary: "#384452" #"#33004D"
-  link: "#ffa400" #"#428bca"
+  link: "#f67031" #ffa400 #"#428bca"
   link_hover: "#01b2fe"
   footer_heading: "#ffffff"
   footer_content: "#bfc9d3"
