@@ -29,6 +29,12 @@ collections:
   features:
     output: true
     permalink: /features/:title/
+  plans:
+    output: true
+    permalink: /plans/:title/
+  customercases:
+    output: true
+    permalink: /customercases/:title/
 
 ### CONTACT SETTINGS ###
 

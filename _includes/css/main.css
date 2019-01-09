@@ -328,6 +328,7 @@ a:focus {
   margin: 10px;
   bottom: 5px;
   position: absolute;
+  justify-content: center;
 }
 
 /*	################################################################
