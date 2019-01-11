@@ -1,6 +1,8 @@
 ---
 layout: feature
 title:  "Edge Servers"
+resource: true
+categories: [regional, global, enterprise, display]
 ---
 The part where files and visitors are served happens in edge servers. Edge servers are Linux environments suitably provisioned to run ShimmerCat. ShimmerCat should run in a Linux server or virtual appliance since it relies in Linux’s epoll for handling I/O channels in a scalable way. Your web application can, and should, run in a separate server environment.
 

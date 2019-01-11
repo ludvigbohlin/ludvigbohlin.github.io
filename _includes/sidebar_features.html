@@ -14,12 +14,32 @@
         </p>-->
     <div class="spacing"></div>
 
+    <h4>Plans</h4>
+    <div class="hline"></div>
+        <ul class="popular-posts">
+            {% for plan in site.plans %}
+                <p><a href="{{ plan.url | prepend: site.baseurl }}">{{ plan.title }}</a></p>
+            {% endfor %}
+        </ul>
+        
+    <div class="spacing"></div>
+
     <h4>Features</h4>
     <div class="hline"></div>
         <ul class="popular-posts">
-            {% for feature in site.features %}
-                <p><a href="{{ feature.url | prepend: site.baseurl }}">{{ feature.title }}</a></p>
-            {% endfor %}
+                {% for cat in site.category-list %}
+                        {% if cat == "display" %}
+                            {% for page in site.features %}
+                                {% if page.resource == true %}
+                                  {% for pc in page.categories %}
+                                    {% if pc == cat %}
+                                      <p><a class="linkcolors" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></p>
+                                    {% endif %}   <!-- cat-match-p -->
+                                  {% endfor %}  <!-- page-category -->
+                                {% endif %}   <!-- resource-p -->
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
         </ul>
 
     <div class="spacing"></div>

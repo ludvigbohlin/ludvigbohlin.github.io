@@ -1,6 +1,8 @@
 ---
 layout: feature
 title:  "AI and Automation"
+resource: true
+categories: [accelerator, regional, global, enterprise, display]
 ---
 Data about website visitor behavior is collected and sent to the AI engine where it is analyzed and optimised for performance. This provides an automatic way of going beyond handmade conventional optimizations, and also makes it possible to learn, predict, and act pro-actively on web-traffic.
 

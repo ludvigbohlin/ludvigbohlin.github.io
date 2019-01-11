@@ -1,6 +1,8 @@
 ---
 layout: feature
 title:  "HTTP/2 Push"
+resource: true
+categories: [accelerator, regional, global, enterprise, display]
 ---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zPqFjLlP8Yw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

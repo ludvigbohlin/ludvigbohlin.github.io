@@ -64,8 +64,37 @@ a.button-buy:hover {
         <div class="col-lg-8">
 
             <h3>What you get with {{page.title}}</h3>
+            <div class="spacing"></div>
+              
+            <div class="col-lg-6">
+                <h4><i class="fas fa-robot fa-2x" aria-hidden="true" style=" vertical-align: middle; margin: 10px;"></i>AI and Automation</h4>
+                <p>Data about website visitor behavior is collected and sent to the AI engine where it is analyzed and optimised for performance - automatically</p>
+            </div>
+
+            <div class="col-lg-6">
+                <h4><i class="fa fa-bolt fa-2x" aria-hidden="true" style=" vertical-align: middle; margin: 10px;"></i> HTTP/2 Push</h4>
+                <p>Optimize the delivery of web resources to browsers by automatically leveraging machine learning and HTTP/2 Push</p>
+            </div>
+
+            <div class="col-lg-6">
+                <h4><i class="far fa fa-check-circle fa-2x" aria-hidden="true" style=" vertical-align: middle; margin: 10px;"></i> Bot Blocking</h4>
+                <p>Increase security and allocate more computing resources to human visitors with automatic bot detection and blocking</p>
+            </div>
+
+            <div class="col-lg-6">
+                <h4><i class="fas fa-search fa-2x" aria-hidden="true" style=" vertical-align: middle; margin: 10px;"></i>Built-in Monitoring</h4>
+                <p>To support high availability, measure performance and provide clear indicators about how to improve and grow the business.
+
+
+                </p>
+            </div>
+
+            <div class="col-lg-12">
+            <div class="spacing"></div>
+            <h3>More about the {{page.title}}</h3>            
               
             {{ content }}
+            </div>
 
         </div><! --/col-lg-8 -->
 
@@ -89,8 +118,18 @@ a.button-buy:hover {
         <h4>Included Features</h4>
         <div class="hline"></div>
         <ul class="popular-posts">
-            {% for feature in site.features %}
-                <p><a class="linkcolors" href="{{ feature.url | prepend: site.baseurl }}">{{ feature.title }}</a></p>
+            {% for cat in site.category-list %}
+                {% if cat == "accelerator" %}
+                    {% for page in site.features %}
+                        {% if page.resource == true %}
+                          {% for pc in page.categories %}
+                            {% if pc == cat %}
+                              <p><a class="linkcolors" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></p>
+                            {% endif %}   <!-- cat-match-p -->
+                          {% endfor %}  <!-- page-category -->
+                        {% endif %}   <!-- resource-p -->
+                    {% endfor %}
+                {% endif %}
             {% endfor %}
         </ul>
 

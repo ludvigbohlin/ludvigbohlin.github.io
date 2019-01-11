@@ -9,6 +9,7 @@ url: "" #"http://www.shimmercat.com"
 
 # Build settings
 markdown: kramdown
+category-list: [accelerator, regional, global, enterprise, display]
 permalink: /:categories/:title
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 
@@ -17,7 +18,7 @@ colors:  #in hex code if not noted else
   primary_rgb: "246,112,49" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
   secondary: "#384452" #"#33004D"
   link: "#f67031" #ffa400 #"#428bca"
-  link_hover: "#01b2fe"
+  link_hover: "#384452"
   footer_heading: "#ffffff"
   footer_content: "#bfc9d3"
 

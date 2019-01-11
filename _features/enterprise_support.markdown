@@ -1,8 +1,8 @@
 ---
 layout: feature
-title:  "System Overview"
+title:  "Enterprise Support"
 resource: true
-categories: [regional, global, enterprise, display]
+categories: [enterprise]
 ---
 ShimmerCat Accelerator is simply added on top of your current e-commerce website where it takes the place of a conventional edge server, e.g. Apache or NginX. No need for any changes to your current setup. ShimmerCat handles the communication with the website visitor while also collecting valuable data. This log data is sent to our AI engine and analysis service, where we detect patterns, and send optimization rules back to ShimmerCat.  These rules are then used to deliver an optimized and faster loading website to the visitors.
 

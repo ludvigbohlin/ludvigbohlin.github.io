@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <style>
 .topbar-header {
     background: #f6d231;
@@ -61,11 +62,38 @@ a.button-buy:hover {
 
 <div class="container mtb">
     <div class="row">
-        <div class="col-lg-8">    
+        <div class="col-lg-8"> 
 
-            <h3>What you get with {{page.title}}</h3>
+            <h3>What you get with the {{page.title}}</h3>
+            <div class="spacing"></div>
+
+            <div class="col-lg-6">
+                <h4><i class="fa fa-globe fa-2x" aria-hidden="true" style=" vertical-align: middle; margin: 10px;"></i> Enterprise Edge Server Network</h4>
+                <p>Custom-built enterprise edge server network to keep content "hot" at all times for for high availability e-commerce enterprises</p>
+            </div>
+
+            <div class="col-lg-6">
+                <h4><i class="fa fa-bolt fa-2x" aria-hidden="true" style=" vertical-align: middle; margin: 10px;"></i> ShimmerCat Accelerator</h4>
+                <p>HTTP/2 prioritization with automated ahead-of-time asset delivery, thanks to statistical inference and other machine learning methods.</p>
+            </div>
+
+            <div class="col-lg-6">
+                <h4><i class="fa fa-phone fa-2x" aria-hidden="true" style=" vertical-align: middle; margin: 10px;"></i> 365/7/24 Enterprise Support</h4>
+                <p>Named representative and phone number for tech support. Direct, highly competent technical support via chat available during working hours and incidents</p>
+            </div>
+
+            <div class="col-lg-6">
+                <h4><i class="fa fa-cog fa-2x" aria-hidden="true" style=" vertical-align: middle; margin: 10px;"></i> Image Optimization & Prioritization</h4>
+                <p>Automatically optimize the images on your site, and automatically prioritize the order they load. Save manual work and enjoy the improved performance.</p>
+            </div>
+
+            <div class="col-lg-12">
+            <div class="spacing"></div>
+            <h3>More about the {{page.title}}</h3>            
               
             {{ content }}
+            </div>
+
 
         </div><! --/col-lg-8 -->
 
@@ -89,10 +117,21 @@ a.button-buy:hover {
         <h4>Included Features</h4>
         <div class="hline"></div>
         <ul class="popular-posts">
-            {% for feature in site.features %}
-                <p><a class="linkcolors" href="{{ feature.url | prepend: site.baseurl }}">{{ feature.title }}</a></p>
+            {% for cat in site.category-list %}
+                {% if cat == "enterprise" %}
+                    {% for page in site.features %}
+                        {% if page.resource == true %}
+                          {% for pc in page.categories %}
+                            {% if pc == cat %}
+                              <p><a class="linkcolors" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></p>
+                            {% endif %}   <!-- cat-match-p -->
+                          {% endfor %}  <!-- page-category -->
+                        {% endif %}   <!-- resource-p -->
+                    {% endfor %}
+                {% endif %}
             {% endfor %}
         </ul>
+
 
         <div class="spacing"></div>
 

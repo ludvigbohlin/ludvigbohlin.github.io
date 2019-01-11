@@ -3,6 +3,9 @@ layout: index
 title: Home
 permalink: /
 ---
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
 
 
 
@@ -73,9 +76,21 @@ permalink: /
         <div class="col-lg-3">
             <h4>Features</h4>
             <div class="hline"></div>
-            {% for feature in site.features %}
-                <p><a href="{{ feature.url | prepend: site.baseurl }}">{{ feature.title }}</a></p>
-            {% endfor %}
+               <ul class="popular-posts">
+                    {% for cat in site.category-list %}
+                        {% if cat == "display" %}
+                            {% for page in site.features %}
+                                {% if page.resource == true %}
+                                  {% for pc in page.categories %}
+                                    {% if pc == cat %}
+                                      <p><a class="linkcolors" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></p>
+                                    {% endif %}   <!-- cat-match-p -->
+                                  {% endfor %}  <!-- page-category -->
+                                {% endif %}   <!-- resource-p -->
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                </ul>
         </div>
 
 <!--         <div class="col-lg-3">
