@@ -498,6 +498,7 @@ a:focus {
 
 #blue {
 	background: {{ site.colors.primary }};
+	background: linear-gradient(to right,#f67031 50%, #f57d44, #f69465);
 	margin-top: 60px;
 	margin-bottom: 60px;
 	padding-top: 25px;
