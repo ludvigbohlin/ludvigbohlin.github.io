@@ -257,7 +257,7 @@ a:focus {
 	padding-right: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	height: 450px;
+	min-height: 450px;
 	color: white
 }
 
@@ -268,7 +268,7 @@ a:focus {
 	padding-right: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	height: 450px;
+	min-height: 450px;
 	color: white
 }
 
@@ -279,7 +279,7 @@ a:focus {
 	padding-right: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	height: 450px;
+	min-height: 450px;
 	color: white
 }
 
@@ -290,7 +290,7 @@ a:focus {
 	padding-right: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	height: 450px;
+	min-height: 450px;
 	color: white
 }
 
@@ -299,8 +299,6 @@ a:focus {
   background-color: white;
   border-color: none;
   margin: 10px;
-  bottom: 5px;
-  position: absolute;
 }
 
 .btn-purple {
@@ -308,8 +306,6 @@ a:focus {
   background-color: white;
   border-color: none;
   margin: 10px;
-  bottom: 5px;
-  position: absolute;
 }
 
 .btn-blue {
@@ -317,8 +313,6 @@ a:focus {
   background-color: white;
   border-color: none;
   margin: 10px;
-  bottom: 5px;
-  position: absolute;
 }
 
 .btn-yellow {
@@ -326,9 +320,6 @@ a:focus {
   background-color: white;
   border-color: none;
   margin: 10px;
-  bottom: 5px;
-  position: absolute;
-  justify-content: center;
 }
 
 /*	################################################################
