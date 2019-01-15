@@ -3,16 +3,13 @@ layout: index
 title: Home
 permalink: /
 ---
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-
-
-
+{% include shimmercat_content_disposition.html %}
 
 <div class="container mtb">
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2 centered">
-            <h2>ShimmerCat creates fast websites with AI, automation and HTTP/2 technology</h2>
+            <h3>ShimmerCat creates fast websites with HTTP/2 technology</h3>
             <br>
             <div class="hline"></div>
                 <div class="row">
@@ -104,7 +101,6 @@ permalink: /
         <div class="col-sm-3">
             <h4>Features</h4>
             <div class="hline"></div>
-               <ul class="popular-posts">
                     {% for cat in site.category-list %}
                         {% if cat == "display" %}
                             {% for page in site.features %}
@@ -118,16 +114,7 @@ permalink: /
                             {% endfor %}
                         {% endif %}
                     {% endfor %}
-                </ul>
         </div>
-
-<!--         <div class="col-lg-3">
-            <h4>Frequently Asked</h4>
-            <div class="hline"></div>
-            {% for question in site.questions %}
-                <p><a href="{{ question.url | prepend: site.baseurl }}">{{ question.title }}</a></p>
-            {% endfor %}
-        </div> -->
 
         <div class="col-sm-3">
             <h4>Latest Blog Posts</h4>

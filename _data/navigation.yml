@@ -1,0 +1,20 @@
+- title: Home
+  url: /index
+- title: Solutions
+  url: /accelerator
+- title: Blog
+  url: /blog
+- title: Integration
+  sublinks:
+    - title: Magento
+      url: /integrations/magento
+    - title: WooCommerce
+      url: /integrations/woocommerce
+    - title: separator
+    - title: Book Demo
+      url: /contact
+- title: Pricing
+  url: /pricing
+- title: Contact
+  url: /contact
+  

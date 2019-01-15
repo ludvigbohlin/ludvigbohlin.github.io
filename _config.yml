@@ -36,6 +36,9 @@ collections:
   customercases:
     output: true
     permalink: /customercases/:title/
+  integrations:
+    output: true
+    permalink: /integrations/:title/
 
 ### CONTACT SETTINGS ###
 
@@ -51,12 +54,13 @@ social:
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
   - lines:
-    - Norra Obbolavägen 112A,
-    - 904 22, Umeå,
+    - Grev Turegatan 19,
+    - 114 38, Stockholm,
     - Sweden.
 email: ops@shimmercat.com
 tel: +4670 485 1947
 
+ 
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
 
@@ -72,7 +76,7 @@ offices:
       #- title: twitter
       #  url: http://twitter.com/handle
   - name: Umeå
-    position: ShimmerCat HQ
+    position: Norra Obbolavägen 112A
     text:
     img: office02.jpg
     social:
