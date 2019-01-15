@@ -9,7 +9,7 @@ url: "" #"http://www.shimmercat.com"
 
 # Build settings
 markdown: kramdown
-category-list: [accelerator, regional, global, enterprise, display]
+category-list: [accelerator, regional, global, enterprise, display, add-on]
 permalink: /:categories/:title
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 
@@ -39,6 +39,9 @@ collections:
   integrations:
     output: true
     permalink: /integrations/:title/
+  solutions:
+    output: true
+    permalink: /solutions/:title/
 
 ### CONTACT SETTINGS ###
 

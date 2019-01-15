@@ -1,7 +1,11 @@
 - title: Home
-  url: /index
+  url: /index/
 - title: Solutions
-  url: /accelerator
+  sublinks:
+    - title: ShimmerCat Accelerator
+      url: /solutions/shimmercataccelerator
+    - title: Accelerator Network
+      url: /solutions/acceleratornetwork
 - title: Blog
   url: /blog
 - title: Integration

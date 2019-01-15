@@ -12,4 +12,3 @@ Magento is an ecommerce platform built on open source technology which provides 
 * Would like to have significant loading time improvements on your website or deliver faster websites to your clients?
 
 If you answer "Yes" to any of the questions above, then you have come to the right place. This <a href="https://docs.accelerator.shimmercat.com/tutorials/magento/" target="_blank">tutorial</a> is for you!
-

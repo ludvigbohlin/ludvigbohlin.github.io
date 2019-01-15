@@ -2,7 +2,7 @@
 layout: feature
 title:  "Image Prioritisation"
 resource: true
-categories: [enterprise, display]
+categories: [enterprise, display, add-on]
 ---
 Even though the e-commerce backend is fast, pages containing too many images can be a performance killer. But by knowing which images are usually seen first by your website visitors, ShimmerCat can prioritize image bytes so that visitors can start interacting with the page faster.
 

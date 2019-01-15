@@ -147,7 +147,7 @@ a.button-buy:hover {
 
         <div class="spacing"></div>
 
-        <h3><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Global%20Scale%20Up" target="_top" class="button-buy">Get Now</a></h3>
+        <h3><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Regional%20Scale%20Up" target="_top" class="button-buy">Get Now</a></h3>
  
         <div class="spacing"></div>
 
@@ -179,10 +179,30 @@ a.button-buy:hover {
 
         <div class="spacing"></div>
 
+        <h4>Add-Ons</h4>
+        <div class="hline"></div>
+        <ul class="popular-posts">
+            {% for cat in site.category-list %}
+                {% if cat == "add-on" %}
+                    {% for page in site.features %}
+                        {% if page.resource == true %}
+                          {% for pc in page.categories %}
+                            {% if pc == cat %}
+                              <p><a class="linkcolors" href="{{ page.url  | prepend: site.baseurl }}">{{ page.title }}</a></p>
+                            {% endif %}   <!-- cat-match-p -->
+                          {% endfor %}  <!-- page-category -->
+                        {% endif %}   <!-- resource-p -->
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+        <div class="spacing"></div>
+
         <h4>More Info</h4>
         <div class="hline"></div>
         <p>If you want more info don't hesitate to contact us!</p>
-        <p><a href="mailto:henrik.frienholt@shimmercat.com?Subject=ShimmerCat%20Accelerator" target="_top" class="btn btn-theme">Book a meeting</a></p>
+        <p><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Regional%20Scale%20Up" target="_top" class="btn btn-theme">Book a meeting</a></p>
 
     </div>
 
@@ -200,7 +220,7 @@ a.button-buy:hover {
             <div class="col-sm-4">
                 <h3>Use {{page.title}} to grow your business:</h3>
                 <div class="spacing"></div>
-                <h4><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Global%20Scale%20Up" target="_top" class="button-buy">Get Now</a></h4>
+                <h4><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Regional%20Scale%20Up" target="_top" class="button-buy">Get Now</a></h4>
             </div>
 
             <div class="col-sm-4">

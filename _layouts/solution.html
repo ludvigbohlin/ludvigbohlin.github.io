@@ -1,6 +1,6 @@
 ---
 layout: default
-wrap_title: 'Features'
+wrap_title: 'Solution'
 ---
 
 {% include wrap.html %}
@@ -24,20 +24,29 @@ wrap_title: 'Features'
 
                 <div class="spacing"></div>
                 
-                <h4>Tutorial {{page.title }}</h4>
+                <h4>Learn More</h4>
                 <div class="hline"></div>
-                <p><a href="{{ page.website}}" target="_blank">Check out the {{ page.title }} tutorial</a></p>
-                <p><i>Setup and installation takes about 15-45 minutes</i></p>
+                <p><a href="{{ page.website}}" target="_blank">{{page.description}}</a></p>
 
                 <div class="spacing"></div>
 
-                <h4>Integrations</h4>
-                <div class="hline"></div>
-                <ul class="popular-posts">
-                    {% for integration in site.integrations %}
-                        <p><a href="{{ integration.url | prepend: site.baseurl }}">{{ integration.title }}</a></p>
-                    {% endfor %}
-                </ul>
+                <h4>Features</h4>
+                    <div class="hline"></div>
+                        <ul class="popular-posts">
+                                {% for cat in site.category-list %}
+                                        {% if cat == "display" %}
+                                            {% for page in site.features %}
+                                                {% if page.resource == true %}
+                                                  {% for pc in page.categories %}
+                                                    {% if pc == cat %}
+                                                      <p><a class="linkcolors" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></p>
+                                                    {% endif %}   <!-- cat-match-p -->
+                                                  {% endfor %}  <!-- page-category -->
+                                                {% endif %}   <!-- resource-p -->
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endfor %}
+                        </ul>
 
                 <div class="spacing"></div>
 

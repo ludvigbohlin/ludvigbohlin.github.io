@@ -2,7 +2,7 @@
 layout: feature
 title:  "Image Optimisation"
 resource: true
-categories: [enterprise, display]
+categories: [enterprise, display, add-on]
 ---
 Images often account for most of the downloaded bytes on a web page and also often occupy a significant amount of visual space. As a result, optimizing images can often yield large byte savings and performance improvements for your website: the fewer bytes the browser has to download, the less competition there is for the client's bandwidth and the faster the browser can download and render useful content on the screen.
 
