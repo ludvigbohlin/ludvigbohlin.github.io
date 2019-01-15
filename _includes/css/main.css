@@ -98,13 +98,6 @@ a:focus {
 	text-align: center
 }
 
-/* Simplest Case */
-.headerbox {
-  background: linear-gradient(orange, white);
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-
 /*	################################################################
 	BOOTSTRAP MODIFICATIONS & TWEAKS
 ################################################################# */
@@ -238,10 +231,6 @@ a:focus {
 	border-bottom: 2px solid {{ site.colors.secondary }};
 }
 
-.hline-white {
-	border-bottom: 2px solid white;
-}
-
 .hline-w {
 	border-bottom: 2px solid #ffffff;
 	margin-bottom: 25px;
@@ -258,6 +247,7 @@ a:focus {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	min-height: 450px;
+	border-radius: 10px;
 	color: white
 }
 
@@ -269,6 +259,7 @@ a:focus {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	min-height: 450px;
+	border-radius: 10px;
 	color: white
 }
 
@@ -280,6 +271,7 @@ a:focus {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	min-height: 450px;
+	border-radius: 10px;
 	color: white
 }
 
@@ -291,6 +283,7 @@ a:focus {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	min-height: 450px;
+	border-radius: 10px;
 	color: white
 }
 
