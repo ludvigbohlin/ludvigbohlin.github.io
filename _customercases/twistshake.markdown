@@ -4,12 +4,10 @@ title:  "Twistshake"
 description: Twistshake is a fast growing global company that sells different products for children.
 website: https://www.twistshake.com
 logo: /assets/img/customercases/twistshake_logo.png
-contact: Camillo Eriksson
-plan: Global Scale Up
 quote: Our loading times improved a lot globally - especially for mobile formats
 ---
 
-**Twistshake is one of Sweden's fastest growing companies with their niche children's products sold worldwide. The company is facing an even greater expansion in 2019. Since the week before Black Friday, Twistshake and ShimmerCat have setup a global acceleration network, with servers utilizing ShimmerCat's market-leading priority and HTTP/2 Push technology.**
+**Twistshake is one of Sweden's fastest growing companies within its niche and the company sells products worldwide. The company is facing an even greater expansion in 2019. Since the week before Black Friday, Twistshake and ShimmerCat have setup a global acceleration network, with servers utilizing ShimmerCat's market-leading priority and HTTP/2 Push technology.**
 
 <img class="full-width" src="{{ "/assets/img/customercases/twistshake_products.jpg" | prepend: site.baseurl }}" width="100%" height="auto">
 
@@ -27,9 +25,14 @@ The main result is that we were able to handle the increased traffic during Blac
 
 
 ### Describe the collaboration with ShimmerCat?
-We get a personal and fast-footed service that creates extra value for us, and also ensures that we choose the correct partners. The technology itself has dramatically reduced our administrative costs on the technical side since it is mostly automated.
+We get a personal and fast-footed service that creates extra value for us, and also ensures that we choose the best partners. The technology itself has dramatically reduced our administrative costs on the technical side since it is mostly automated.
 
-> The technology itself has dramatically reduced our administrative costs on the technical side since it is mostly automated.
+> Their offer and their technology cannot be compared with others on the market.
 
 ### What would you like to say to other e-commerces that face the challenge of slow loading times?
 It is a complex problem that firstly is difficult to measure correctly, and secondly is challenging to solve! But I would warmly recommend contacting ShimmerCat. Their offer and their technology cannot be compared with others on the market.
+
+<br>
+
+<b>Camillo Eriksson</b><br>
+<i>CEO, Twistshake AB</i>
