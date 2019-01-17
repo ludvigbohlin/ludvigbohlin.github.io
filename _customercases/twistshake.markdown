@@ -1,6 +1,6 @@
 ---
 layout: customercase
-title:  "Twistshake"
+title:  "Global Scale Up"
 description: Twistshake is a fast growing global company that sells different products for children.
 website: https://www.twistshake.com
 logo: /assets/img/customercases/twistshake_logo.png
@@ -15,7 +15,7 @@ Twistshake's products are sold in over 70 markets, and recently the Eequity, the
 
 
 ### How is ShimmerCat helping Twistshake?
-During Black Friday, we faced some problems caused by increased traffic load to our website. Via Eequity's recommendation, we contacted ShimmerCat just three days before Black Friday. ShimmerCat were quick to setup their solution with load balancing and automatic bot filtering, which significantly reduced the load in the application servers. In combination with this, a global acceleration network was setup with servers using the ShimmerCat technolgy to speed up the site with HTTP/2 push and strategic asset prioritisation. Our loading times improved a lot globally - especially for mobile formats.
+During Black Friday, we faced some problems caused by increased traffic load to our website. Via Eequity's recommendation, we contacted ShimmerCat just three days before Black Friday. ShimmerCat were quick to setup their solution with load balancing and automatic bot filtering, which significantly reduced the load in the application servers. In combination with this, a global acceleration network was setup with servers using the ShimmerCat technology to speed up the site with HTTP/2 push and strategic asset prioritisation. Our loading times improved a lot globally - especially for mobile formats.
 
 > Our loading times improved a lot globally - especially for mobile formats 
 

@@ -155,7 +155,9 @@ a.button-buy:hover {
         <h4>Customer Case</h4>
         <div class="hline"></div>
             <ul class="popular-posts">
-                <p><a class="linkcolors" href="{{ "/customercases/twistshake" | prepend: site.baseurl }}">Twistshake.com used ShimmerCat Acceleration Network to reach the world with their products</a></p>
+            {% for case in site.customercases %}
+                <p><a class="linkcolors" href="{{ case.url | prepend: site.baseurl }}">{{ case.title }}</a></p>
+            {% endfor %}
             </ul>
 
         <div class="spacing"></div>
