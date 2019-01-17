@@ -239,81 +239,31 @@ a:focus {
 /*	################################################################
 	GRADIENT BOXES
 ################################################################# */
-#orangewrap {
-	background-color: #f67031;
-	background: linear-gradient(to top right,#f67031 50%, #f57d44, #f69465);
+
+
+#colorwrap {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	min-height: 450px;
 	border-radius: 10px;
-	color: white
+	border-style: ridge;
+	border-width: 10px;
+	border-color: #f6d231;
 }
 
-#purplewrap {
-	background-color: #ae31f6;
-	background: linear-gradient(to top right,#ae31f6 50%, #bd5af6, #ce89f5);
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	min-height: 450px;
-	border-radius: 10px;
-	color: white
-}
-
-#bluewrap {
-	background-color: #31bef6;
-	background: linear-gradient(to top right,#31bef6 50%, #49c5f6, #9adbf5);
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	min-height: 450px;
-	border-radius: 10px;
-	color: white
-}
-
-#yellowwrap {
-	background-color: #f6d231;
-	background: linear-gradient(to top right,#f6d231 50%, #f5d546, #f8f0cc);
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	min-height: 450px;
-	border-radius: 10px;
-	color: white
-}
-
-.btn-orange {
-  color: #f67031;
+.btn-colorbtn {
+  color: {{site.colors.secondary}};
   background-color: white;
-  border-color: none;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 3px;
   margin: 10px;
+  border-style: outset;
 }
+a.btn-colorbtn:hover{font-weight: bold;border-width: 4px;margin: 9px;}
 
-.btn-purple {
-  color: #ae31f6;
-  background-color: white;
-  border-color: none;
-  margin: 10px;
-}
-
-.btn-blue {
-  color: #31bef6;
-  background-color: white;
-  border-color: none;
-  margin: 10px;
-}
-
-.btn-yellow {
-  color: #f6d231;
-  background-color: white;
-  border-color: none;
-  margin: 10px;
-}
 
 /*	################################################################
 	SITE WRAPS

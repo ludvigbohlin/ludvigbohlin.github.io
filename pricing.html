@@ -6,6 +6,16 @@ permalink: /pricing/
 
 <style>
 .menu ul {min-height:200px;}
+a:hover {font-weight: bold;}
+h5 {
+  color: {{site.colors.secondary}};
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: {{site.colors.secondary}}; /* safari still uses vendor prefix */
+  text-decoration-color: {{site.colors.secondary}};
+}
 </style>
 
 <div class="container mtb">
@@ -19,15 +29,13 @@ permalink: /pricing/
     </div>
 </div><! --/container -->
 
-
-
 <div class="container mtb">
     <div class="row">        
         <div class="col-sm-3">
-        <div id="orangewrap">
+        <div id="colorwrap" style="border-color:#f67031">
             <h2><center> Accelerator Subscription</h2>
             <div class="hline-white"></div>
-            <h3><center>2 500 SEK/month</h3>
+            <h4><center>2 500 SEK/month</h4>
             <div class="menu">
               <ul>
                 <li>Do-it-yourself package</li>
@@ -36,18 +44,19 @@ permalink: /pricing/
                 <li>ShimmerCat Accelerator</li>
                 <li>Possibility to setup monitoring</li>
                 <li>API programmability</li>
+                <li>Documentation</li>
                 <li>Updates</li>
               </ul>
             </div>
-            <h4><center><a href="{{ "/plans/subscription" | prepend: site.baseurl }}" style="color:white"><u> Learn More ></u> </a></h4>
-            <p><center><vertical-align: bottom><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Accelerator%20Subscription" target="_top" class="btn btn-orange">Get Now</a></p>
+            <h4><center><a href="{{ "/plans/subscription" | prepend: site.baseurl }}" style="color:{{site.colors.secondary}}"><u> Learn More ></u> </a></h4>
+            <p><center><vertical-align: bottom><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Accelerator%20Subscription" target="_top" class="btn btn-colorbtn" style="border-color:#f67031">Get Now</a></p>
         </div>
         </div>
         <div class="col-sm-3">
-        <div id="purplewrap">
+        <div id="colorwrap" style="border-color:#ae31f6">
             <h2><center> Regional <br/> Scale Up</h2>
             <div class="hline-white"></div>
-            <h3><center>15 000 SEK/month</h3>
+            <h4><center>15 000 SEK/month</h4>
             <div class="menu">
               <ul>
                 <li>Regional custom made server network</li>
@@ -60,15 +69,15 @@ permalink: /pricing/
                 <li>Support</li>
               </ul>
             </div> 
-            <h4><center><a href="{{ "/plans/regionalscaleup" | prepend: site.baseurl }}" style="color:white"><u> Learn More ></u> </a></h4>
-            <p><center><vertical-align: bottom><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Regional%20Scale%20Up" target="_top" class="btn btn-purple">Get Now</a></p>
+            <h4><center><a href="{{ "/plans/regionalscaleup" | prepend: site.baseurl }}" style="color:{{site.colors.secondary}}"><u> Learn More ></u> </a></h4>
+            <p><center><vertical-align: bottom><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Regional%20Scale%20Up" target="_top" class="btn btn-colorbtn" style="border-color:#ae31f6">Get Now</a></p>
         </div>
         </div>
         <div class="col-sm-3">
-        <div id="bluewrap">
+        <div id="colorwrap" style="border-color:#31bef6">
             <h2><center>Global <br/> Scale Up</h2>
             <div class="hline-white"></div>
-            <h3><center>30 000 SEK/month</h3>
+            <h4><center>30 000 SEK/month</h4>
             <div class="menu">
               <ul>
                 <li>Global custom made server network</li>
@@ -81,15 +90,15 @@ permalink: /pricing/
                 <li>Support</li>
               </ul>
             </div>
-            <h4><center><a href="{{ "/plans/globalscaleup" | prepend: site.baseurl }}" style="color:white"><u> Learn More ></u> </a></h4>
-            <p><center><vertical-align: bottom><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Global%20Scale%20Up" target="_top" class="btn btn-blue">Get Now</a></p>
+            <h4><center><a href="{{ "/plans/globalscaleup" | prepend: site.baseurl }}" style="color:{{site.colors.secondary}}"><u> Learn More ></u> </a></h4>
+            <p><center><vertical-align: bottom><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Global%20Scale%20Up" target="_top" class="btn btn-colorbtn" style="border-color:#31bef6">Get Now</a></p>
         </div>
         </div>
         <div class="col-sm-3">
-        <div id="yellowwrap">
+        <div id="colorwrap" style="border-color:#f6d231">
             <h2><center>Enterprise <br/> Plan</h2>
             <div class="hline-white"></div>
-            <h3><center>Contact Us</h3>
+            <h4><center>Contact Us</h4>
             <div class="menu">
               <ul>
                 <li>Enterprise custom made server network</li>
@@ -102,8 +111,8 @@ permalink: /pricing/
                 <li>Enterprise support</li>
               </ul>
             </div>
-            <h4><center><a href="{{ "/plans/enterprise" | prepend: site.baseurl }}" style="color:white"><u> Learn More > </u></a></h4>
-            <p><center><vertical-align: bottom><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Enterprise%20Plan" target="_top" class="btn btn-yellow">Get Now</a></p>
+            <h4><center><a href="{{ "/plans/enterprise" | prepend: site.baseurl }}" style="color:{{site.colors.secondary}}"><u> Learn More > </u></a></h4>
+            <p><center><vertical-align: bottom><a href="mailto:henrik.frienholt@shimmercat.com?Subject=Enterprise%20Plan" target="_top" class="btn btn-colorbtn" style="border-color:#f6d231">Get Now</a></p>
         </div>
         </div>
     </div><! --/row -->
@@ -114,7 +123,7 @@ permalink: /pricing/
 <div class="container mtb">
     <div class="row">        
         <div class="col-sm-3">
-            <h4><font color= #f67031>Accelerator Subscription <br/> Includes All These Great Features:</font></h4>
+            <h5 style="text-decoration-color: #f67031">Accelerator Subscription<br/>Includes All These Great Features:</h5>
             <ul>
               <li>HTTP/2 prioritization</li>
               <li>Automated ahead-of-time asset delivery, thanks to statistical inference and other machine learning methods</li>
@@ -126,7 +135,7 @@ permalink: /pricing/
             <ul>
         </div>
         <div class="col-sm-3">
-            <h4><font color= #ae31f6>Regional Scale Up <br/> Includes Everything in Subscription, and:</font></h4>
+            <h5 style="text-decoration-color: #ae31f6">Regional Scale Up <br/> Includes Everything in Subscription, and:</h5>
             <ul>
               <li>Regional custom built edge server network (akin to a CDN) to keep content "hot" at all times for for high availability e-commerces</li>
               <li>Load balancing, reduced load of origin servers</li>
@@ -139,14 +148,14 @@ permalink: /pricing/
             </ul>
         </div>
         <div class="col-sm-3">
-            <h4><font color= #31bef6>Global Scale Up <br/> Includes Everything in Regional Scale Up, and:</font></h4>
+            <h5 style="text-decoration-color: #31bef6">Global Scale Up <br/> Includes Everything in Regional Scale Up, and:</h5>
             <ul>
               <li>Global custom built edge server network (akin to a CDN) to keep content "hot" at all times for for high availability e-commerces</li>
               <li>Faster web page load times by serving content from locations closer to the user</li>
             </ul>
         </div>
         <div class="col-sm-3">
-            <h4><font color= #f6d231>Enterprise Plan<br/> Includes Everything in Global Scale Up, and:</font></h4>
+            <h5 style="text-decoration-color: #f6d231">Enterprise Plan<br/> Includes Everything in Global Scale Up, and:</h5>
             <ul>
               <li>Enterprise custom built edge server network (akin to a CDN) to keep content "hot" at all times for for high availability e-commerces</li>
               <li>Enterprise-grade security</li>
