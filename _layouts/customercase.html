@@ -20,15 +20,26 @@ wrap_title: 'Features'
 
                 <div class="spacing"></div>
                 
+                <img class="full-width" src="{{ page.logo | prepend: site.baseurl}}" width="80%" height="auto">
+                <div class="spacing"></div>
+                
+                <h4><i>"{{page.quote}}"</i></h4>
+
+                <div class="spacing"></div>
+                
                 <h4>About {{page.title }}</h4>
                 <div class="hline"></div>
+
+                
+
                 <p>{{ page.description }}</a></p>
                 <p>Website: <a href="{{ page.website}}" target="_blank">{{page.website}}</a></p>
-
+                <p>Contact: {{ page.contact }}</p>
+                <p>Plan: {{ page.plan }}</p>
 
                 <div class="spacing"></div>
 
-                <h4>Plans</h4>
+                <h4>About the plans</h4>
                 <div class="hline"></div>
                 <ul class="popular-posts">
                     {% for plan in site.plans %}
