@@ -15,8 +15,8 @@
     - title: WooCommerce
       url: /integrations/woocommerce
     - title: separator
-    - title: Book Demo
-      url: /contact
+    - title: Documentation
+      url: /integrations/documentation
 - title: Pricing
   url: /pricing
 - title: Contact

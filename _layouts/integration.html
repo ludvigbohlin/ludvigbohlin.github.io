@@ -19,15 +19,28 @@ wrap_title: 'Features'
         <div class="col-sm-4">
 
                 <div class="spacing"></div>
+                
+                <img class="full-width" src="{{ page.logo | prepend: site.baseurl}}" width="80%" height="auto">
 
+                <div class="spacing"></div>
+
+                {% if page.title != "Documentation"%}
                 <p><a href="mailto:henrik.frienholt@shimmercat.com?Subject=ShimmerCat Demo" target="_top" class="btn btn-theme">Book a demo</a></p>
+                {% endif %}
+
+                {% if page.title == "Documentation"%}
+                <p><a href="https://docs.accelerator.shimmercat.com/" target="_top" class="btn btn-theme">Check Documentation</a></p>
+                {% endif %}
 
                 <div class="spacing"></div>
                 
+
+                {% if page.title != "Documentation"%}
                 <h4>Tutorial {{page.title }}</h4>
                 <div class="hline"></div>
                 <p><a href="{{ page.website}}" target="_blank">Check out the {{ page.title }} tutorial</a></p>
                 <p><i>Setup and installation takes about 15-45 minutes</i></p>
+                {% endif %}
 
                 <div class="spacing"></div>
 
@@ -35,7 +48,9 @@ wrap_title: 'Features'
                 <div class="hline"></div>
                 <ul class="popular-posts">
                     {% for integration in site.integrations %}
-                        <p><a href="{{ integration.url | prepend: site.baseurl }}">{{ integration.title }}</a></p>
+                        {% if integration.title != "Documentation" %}
+                            <p><a href="{{ integration.url | prepend: site.baseurl }}">{{ integration.title }}</a></p>
+                        {% endif %}
                     {% endfor %}
                 </ul>
 
