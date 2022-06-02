@@ -133,3 +133,4 @@ testimonial:
     message: "We have experienced huge speed improvement compared to previous solutions, and at the same time our manual work with reducing loading times has disappeared."
     author: Rickard Sandberg
     position: CEO - EASY ONLINE STORES AB
+theme: jekyll-theme-minimal
