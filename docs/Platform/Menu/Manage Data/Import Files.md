@@ -1,20 +1,20 @@
 # Table of Contents
-    1. [Import data to the platform](#import-data-to-the-platform)
-        1. [Using a database connection (for Centra, Voyado, etc)](#using-a-database-connection-for-centra-voyado-etc)
-            1. [Set up a configuration](#set-up-a-configuration)
-            1. [Make arbitrary query ](#make-arbitrary-query)
-            1. [How to verify that the sync works?](#how-to-verify-that-the-sync-works?)
-        1. [Using a file](#using-a-file)
-    1. [Find Voyado files to import](#find-voyado-files-to-import)
+1. [Import data to the platform](#import-data-to-the-platform)
+    1. [Using a database connection (for Centra, Voyado, etc)](#using-a-database-connection-for-centra-voyado-etc)
+        1. [Set up a configuration](#set-up-a-configuration)
+        1. [Make arbitrary query ](#make-arbitrary-query)
+        1. [How to verify that the sync works?](#how-to-verify-that-the-sync-works?)
+    1. [Using a file](#using-a-file)
+1. [Find Voyado files to import](#find-voyado-files-to-import)
 [](#table-of-contents)
 
 [*Back to top*](#table-of-contents)
 
-## Import data to the platform
+# Import data to the platform
 
 [*Back to top*](#table-of-contents)
 
-### Using a database connection (for Centra, Voyado, etc)
+## Using a database connection (for Centra, Voyado, etc)
 
 First, make sure you know the origin files to fetch
 * [For Voyado ](#find-voyado-files-to-import)
@@ -23,7 +23,7 @@ Go to the platform and then to `Admin -> Configuration` (can be found at the top
 
 [*Back to top*](#table-of-contents)
 
-#### Set up a configuration
+### Set up a configuration
 Add a database and name the `Database` based on the what system they use (centra, voyado, etc), and choose the matching `Driver`. In the `Config` field, check the standard URL provided by the corresponding ecommerce platform. 
 
 **Notes:**
@@ -33,11 +33,12 @@ Add a database and name the `Database` based on the what system they use (centra
     * `"Store":1,"Market":3,"PriceList":19,"Warehouses":[2,3]`: These are specifications to fetch the correct data, the customer seldom knows this but Centra should have the information. 
 * For **Voyado** customers there are fields that need to be specified:
     * `"Directories"`: These are the directories that can be found in the [Azure data lake]((#find-voyado-files-to-import))
+    * There are defauly directories that will be accessible without specifying them, these are `store/`, `receiptItems/`, `article/` and `allContacts/`
 * There is an option also to `Add Integration`. This part can be skipped, it is only used when we send data to customers. 
 
 [*Back to top*](#table-of-contents)
 
-#### Make arbitrary query 
+### Make arbitrary query 
 Create a source and make an arbitrary query similar to ``` SELECT * FROM `users.gz` ``` for Centra. You can list possible paths by using ``` SELECT * FROM `*` ```. 
 
 This will trigger a proxy sync, and if a Centra customer the `.gz` files will appear once completed. This normally takes 1-5 hours.
@@ -46,7 +47,7 @@ This will trigger a proxy sync, and if a Centra customer the `.gz` files will ap
 
 [*Back to top*](#table-of-contents)
 
-#### How to verify that the sync works?
+### How to verify that the sync works?
 
 Choose the source you created and press the pen to edit it. Go to the `ADD QUERY` tab and choose ```“SELECT * FROM `*`”```. 
 
@@ -56,7 +57,7 @@ If the sync is ready, you will see a list of files to choose from, for example, 
 
 [*Back to top*](#table-of-contents)
 
-### Using a file
+## Using a file
 Go to the platform and then to `Manage data -> Import files` (can be found at the top right menu by clicking the three dots, see example image below). 
 
 If the customer sent their data in a csv-file, drag it to the drop box for importing files.
@@ -67,7 +68,7 @@ Uploaded files are available from the "imports (csv-fs)" database connection whe
 
 [*Back to top*](#table-of-contents)
 
-## Find Voyado files to import
+# Find Voyado files to import
 
 1. Go to [portal.azure.com](portal.azure.com)
 2. Login with the dedicated Infobaleen user (credentials can be sent by Customer Success team). Choose "Work or School" as account type. 

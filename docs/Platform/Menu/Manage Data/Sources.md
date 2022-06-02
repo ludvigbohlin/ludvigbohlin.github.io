@@ -1,5 +1,5 @@
 # Table of Contents
-    1. [Create sources](#create-sources)
+1. [Create sources](#create-sources)
 1. [Frontpage columns](#frontpage-columns)
     1. [Name](#name)
     1. [id](#id)
@@ -50,7 +50,7 @@
 
 [*Back to top*](#table-of-contents)
 
-## Create sources
+# Create sources
 When the [data is imported](https://github.com/infobaleen/customer-success/blob/main/Documentation/Platform/Menu/Manage%20Data/Import%20Files.md), go to `Manage Data -> Sources` and create a new source by clicking the purple plus sign as seen in the below image. 
 
 1. Name the source `import_[source of data]_[type of data]` where `[source of data]` specifies where the data comes from (centra, voyado, etc), and the `[type of data]` specifies the data type (items, users, interactions, etc). 
@@ -271,15 +271,45 @@ resulting in this outcome
 you need to enclose variable names that contain other characters than letters and numbers with `backticks` ``,  
 this includes whitespace ' ', dot '.', etc...
 
+## create a custom source
+SELECT * FROM `raw: 
+id,item
+1,item1
+2,item2`
+this returns a table.
+
 [*Back to top*](#table-of-contents)
 
 ## UNION 
-when making a union the columns need to have the same name and be in the same order
+A UNION merges two data sources by including all unique rows from both. When making a union the columns need to have the same name and be in the same order
 ```
 SELECT * FROM `table 1`
 UNION
 SELECT * FROM `table 2`
 ```
+if you have overlapping id rows in `table 1` and `table 2` the id in `table 1` will be saved and `table 2` will be discared.
+ex. 
+to try this, create a test source
+```
+select 
+incr(1,50) AS id,
+'table 1' AS item
+from `<RANDOM_SOURCE>`
+
+UNION
+select 
+incr(1,1) AS id,
+'table 2' AS item
+from `<RANDOM_SOURCE>`
+```
+then create a new source 
+```
+SELECT * FROM `<TEST_SOURCE>`
+```
+this will show that all overlapping ids will have item from `table 1`.
+
+A UNION can also be suffixed by ALL, where UNION ALL will not discard duplicates, meaning much faster execution but leaves duplicate rows if they exist.
+
 SELECT * 
 
 LEFT JOIN

@@ -127,6 +127,33 @@ example of advanced query.
 ```
 {"Context":[{"Name":"boughtArticleGroup","Field":"prod_collection_name","Option":"all"}, {"Name":"basketArticleGroup","Field":"prod_collection_name","Option":"items"}]}
 ```
+**Examples**  
+*Advanced:*
+```
+{"Context":[{"Name":"bought_phone_model","Field":"phone_model","Option":"all"}]}
+```
+*Filter expression:*
+```
+hasAny(split(bought_phone_model,","),makeArray(phone_model))
+```
+`split(bought_phone_model,",")` returns an array of your purchase history ("Field":"phone_model"): ['bought_phone_model_1','bought_phone_model_2','bought_phone_model_3','bought_phone_model_4']  
+
+`makeArray(phone_model)` returns an array of all `phone_model`: ['phone_model_1','phone_model_2','phone_model_3','phone_model_n']  
+
+`hasAny` checks if elements in `array 1` is contained in `array 2`  
+
+in this case the customers purchase history includes `iPhone 12/Pro MagSafe` and `iPhone 12/Pro`
+The expression `hasAny(split(bought_phone_model,","),makeArray(phone_model))` will thus return `true` for all pruducts where `phone_model` = `iPhone 12/Pro MagSafe` or `iPhone 12/Pro` and `false` for all other products. Thus only products with the same `phone_model` will be recommended.
+
+If you change the expression to `hasAny(split(bought_phone_model,","),makeArray(phone_model)) = FALSE` everything will be inverted thus only recomending products where the `phone_model` **!=** `iPhone 12/Pro MagSafe` or `iPhone 12/Pro`.
+
+![image](https://user-images.githubusercontent.com/102239423/171135517-3d3eaeeb-7785-460e-a242-2a6e3cfaceb4.png)
+![image](https://user-images.githubusercontent.com/102239423/171135706-fcc4ad7f-7066-441a-8e4d-c4162cacebec.png)
+
+[NOTE! when adding an item to in the `Search for items` you **DO NOT** add this item to your purchase history, these items are sent in from the API meaning they will only be affected by a filter expression if you use the option `item` instead of `all`]  
+
+See example:
+![image](https://user-images.githubusercontent.com/102239423/171145795-877fb7b8-6e02-4bf0-857b-985deafe6efd.png)
 
 [*Back to top*](#table-of-contents)
 
@@ -275,48 +302,55 @@ ___
 #### Standard rekommendation: Standard
 Rekommendera det mest sannolika nästa köpet (medium trend)  
 **Syfte:** Hög sannolik att konvertera  
-**Expression:** 
+**Expression:**  
+**Trend:** 
 
 [*Back to top*](#table-of-contents)
 
 #### Liknande produkter rekommendation: Similar
 Rekommendera produkter ur samma kategori  
 **Syfte:** Hög igenkänningsfaktor  
-**Expression:** 
+**Expression:**  
+**Trend:** 
 
 [*Back to top*](#table-of-contents)
 
 #### Inspiration rekommendation: Inspiration
 Rekommendera produkter inom kategorier kunden ej handlat inom tidigare / vald produkt  
 **Syfte:** Inspirera till köp i de mest relevanta kategorier man ännu ej handlat inom / produkten ej är i  
-**Expression:** 
+**Expression:**  
+**Trend:** 
 
 [*Back to top*](#table-of-contents)
 
 #### Win-back rekommendation: Win-back
 Rekommendera mest sannolika produkter en kund kommer köpa utifrån historiskt köpbeteende  
 **Syfte:** Presenter de produkter en churnad kund har högst sannolikhet att köpa  
-**Expression:** 
+**Expression:**  
+**Trend:** 
 
 [*Back to top*](#table-of-contents)
 
 #### Check-out rekommendation: Check-out 
 Rekommendera billigare produkter utifrån vad kunden lagt i sin varukorg  
 **Syfte:** Öka AOV med en relevant produkt i det lägre prissegmentet  
-**Expression:**  tofloat(Price) < tofloat(last(basketArticlePrice))*0.8
+**Expression:** tofloat(Price) < tofloat(last(basketArticlePrice))*0.8  
+**Trend:** 
 
 [*Back to top*](#table-of-contents)
 
 #### Tack för senast order rekommendation: Last purchase 
 Rekommendera mest sannolika produkter utifrån kundens senaste order  
 **Syfte:** Öka andelen kunder som gör ett nästa köp  
-**Expression:** 
+**Expression:**  
+**Trend:** None trend???
 
 [*Back to top*](#table-of-contents)
 
 #### Produkter på rea rekommendationer: On sale
 Rekommendera produkter som är på rea  
 **Syfte:** Öka rea fsg genom att visa relevanta produkter på rea.  
-**Expression:** 
+**Expression:**  
+**Trend:** 
 
 [*Back to top*](#table-of-contents)

@@ -20,7 +20,7 @@
 In order to create dashboards we need to complete three steps: 
 
 1. Import data to the platform
-2. Create sources that contains data from one or more imported files
+2. Create sources that contain data from one or more imported files
 3. Create a data model based upon the sources
 4. Create dashboards
 
@@ -39,7 +39,7 @@ Go to the platform and then to `Admin -> Configuration` (can be found at the top
 [*Back to top*](#table-of-contents)
 
 #### Set up a configuration
-Add a database and name the `Database` based on the what system they use (centra, voyado, etc), and choose the matching `Driver`. In the `Config` field, check the standard URL provided by the corresponding ecommerce platform. 
+Add a database and name the `Database` based on the system they use (centra, voyado, etc), and choose the matching `Driver`. In the `Config` field, check the standard URL provided by the corresponding ecommerce platform. 
 
 **Notes:**
 * A key or token is needed to access the databases. This key is listed under `Admin -> Secrets`. 

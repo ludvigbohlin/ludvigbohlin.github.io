@@ -1,6 +1,7 @@
 # Table of Contents
 1. [Overlaps](#overlaps)
 1. [Abbreviations and common expressions](#abbreviations-and-common-expressions)
+    1. [Executive titles](#executive-titles)
 1. [Partner companies](#partner-companies)
     1. [Centra](#centra)
     1. [Voyado](#voyado)
@@ -13,6 +14,7 @@
     1. [Currency rates](#currency-rates)
     1. [Creating new platform](#creating-new-platform)
     1. [To access ib-kube:](#to-access-ib-kube)
+        1. [Windows](#windows)
 1. [ib platform on windows through wsl](#ib-platform-on-windows-through-wsl)
     1. [Setup IB-platform on Windows through WSL 2](#setup-ib-platform-on-windows-through-wsl-2)
 1. [ib platform on windows through wsl](#ib-platform-on-windows-through-wsl)
@@ -35,13 +37,10 @@
 [*Back to top*](#table-of-contents)
 
 # Abbreviations and common expressions
-* GTIN  
-GTIN stands for Global Trade Item Number and is a GS1 number used to give products and packaging a globally unique identity. The number identifies products ...
-* Agg / Aggregation 
 * API  
 An application programming interface is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software.
 * CRM  
-Customer Relationship Management (CRM) is a strategy that companies use to manage interactions with customers and potential customers. CRM helps organisations streamline processes, build customer relationships, increase sales, improve customer service, and increase profitability.
+Customer Relationship Management (CRM) is a strategy that companies use to manage interactions with customers and potential customers. CRM helps organisations streamline processes, build customer relationships, increase sales, improve customer service, and increase profitability.* ERP system
 * Cold Calling  
 Cold calling is a technique in which a salesperson contacts individuals who have not previously expressed interest in the offered products or services. Cold calling typically refers to solicitation by phone or telemarketing, but can also involve in-person visits, such as with door-to-door salespeople.
 * POC  
@@ -52,28 +51,21 @@ Monthly Recurrent Revenue (MRR)
 Something ad hoc is put together on the fly for one narrow, pressing, or special purpose.
 * BI  
 Business intelligence (BI) comprises the strategies and technologies used by enterprises for the data analysis and management of business information.
-* B2B  
-Business-to-business (B2B)
-* B2C  
-business-to-consumer (B2C)
-* GTIN  
-GTIN stands for Global Trade Item Number and is a GS1 number used to give products and packaging a globally unique identity
-* LTV  
-Lifetime Value or LTV is an estimate of the average revenue that a customer will generate throughout their lifespan as a customer.
-* Cohort analysis  
-Cohort analysis is an analytical technique that categorizes and divides data into groups with common characteristics prior to analysis.
+* B2B - Business-to-business
+* B2C - business-to-consumer
+* D2C - Direct to consumer
+* EAN - European Article Number, no longer officially used as GTIN has replaced it, enabling the standard globally.
+* GTIN - Global Trade Item Number and is a GS1 number used to give products and packaging a globally unique identity. The number identifies products ...
+* LTV (Lifetime Value) is an estimate of the average revenue that a customer will generate throughout their lifespan as a customer.
+* CLV - Customer Lifetime Value
+* Cohort analysis - an analytical technique that categorizes and divides data into groups with common characteristics prior to analysis.
 * Customer segments  
 Customer segmentation is the process by which you divide your customers up based on common characteristics
-* OKR  
-OKRs, or “objectives and key results,” are a goal setting methodology that can help teams set measurable goals.
-* AOV  
-Average order value (AOV) tracks the average dollar amount spent each time a customer places an order on a website or mobile app.
-* Churn Analysis  
-Churn analysis is the evaluation of a company's customer loss rate in order to reduce it. Also referred to as customer attrition rate, churn can be minimized by assessing your product and how people use it.
-* CLV  
-Customer Lifetime Value
-* RFM Analysis  
-The “RFM” in RFM analysis stands for recency, frequency and monetary value. RFM analysis is a way to use data based on existing customer behavior to predict how a new customer is likely to act in the future. An RFM model is built using three key factors:
+* OKR (“objectives and key results”) are a goal setting methodology that can help teams set measurable goals.
+* AOV - Average order value (AOV) tracks the average dollar amount spent each time a customer places an order.
+* Churn Analysis is the evaluation of a company's customer loss rate in order to reduce it. Also referred to as customer attrition rate, churn can be minimized by assessing your product and how people use it.
+
+* RFM Analysis - “RFM” stands for recency, frequency and monetary value. RFM analysis is a way to use data based on existing customer behavior to predict how a new customer is likely to act in the future. An RFM model is built using three key factors:
 how recently a customer has transacted with a brand
 how frequently they’ve engaged with a brand
 how much money they’ve spent on a brand’s products and services
@@ -81,11 +73,6 @@ how much money they’ve spent on a brand’s products and services
 Price sensitivity is the degree to which demand changes when the cost of a product or service changes.
 * Basket Analysis  
 Market basket analysis is a data mining technique used by retailers to increase sales by better understanding customer purchasing patterns. It involves analyzing large data sets, such as purchase history, to reveal product groupings, as well as products that are likely to be purchased together.
-* Query 
-* CDPR
-* CFO
-* D2C
-* CTO
 * VAT (moms)  
 A value-added tax (VAT), known in some countries as a goods and services tax
 I sverige moms (ofta 25%)
@@ -94,8 +81,25 @@ Cost of goods sold (COGS) refers to the direct costs of producing the goods sold
 * SKU  
 A stock-keeping unit (SKU) is a scannable bar code, most often seen printed on product labels in a retail store. The label allows vendors to automatically track the movement of inventory. The SKU is composed of an alphanumeric combination of eight-or-so characters.
 * GTIN
-* ERP system
+
+* Agg / Aggregation
 * Embedding
+* Query
+* GDPR - general data regulation protection.
+
+[*Back to top*](#table-of-contents)
+
+## Executive titles
+
+*alphabetical (CEO on top)*
+
+* CEO - Chief Executive Officer (VD) | Responsible for the overall success of a business entity or other organization and for making top-level managerial decisions.
+* CCO - Chief Commercial Officer | Responsible for the commercial strategy and the development of an organization. It typically involves activities relating to marketing, sales, product development and customer service.
+* CFO - Chief Financial Officer | Responsibile for managing the company's finances, including financial planning, management of financial risks, record-keeping, and financial reporting.
+* CIO - Chief Information Officer | Responsible for the management, implementation, and usability of information and computer technologies.
+* CPO - Chief Product Officer | Responsible for various product-related activities in an organization. They focus on bringing the product strategy to align with the business strategy and to deploy that throughout the organization.
+* CTO - Chief Technical Officer | Responsible for developing, implementing, managing and evaluating the company's technology resources.
+* CXO - Chief Experience Officer | Responsible for a company's overall experience and interactions with customers. They help the company drive the entire CX, from products to services, end-to-end.
 
 [*Back to top*](#table-of-contents)
 
@@ -129,7 +133,7 @@ info
 [*Back to top*](#table-of-contents)
 
 ## Grebban
-info
+ecomm agency. designed our platform fall 2021. project is not implemented and used in production yet. 
 
 [*Back to top*](#table-of-contents)
 
@@ -209,6 +213,10 @@ SELECT
 [*Back to top*](#table-of-contents)
 
 ## To access ib-kube:
+
+[*Back to top*](#table-of-contents)
+
+### Windows
   * Install WSL 2  
     * https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/  
     * https://code.visualstudio.com/blogs/2019/09/03/wsl2  
