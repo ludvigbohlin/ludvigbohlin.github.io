@@ -1,0 +1,10 @@
+site_name: CS docs
+site_description: Documentation for Infobaleen Customer Success team
+nav:
+    - Start:
+        - index.md
+
+    - Platform:
+        - Anaöytics -> Dashboard: Platform/Analytics/Dashboards.md
+    
+    
