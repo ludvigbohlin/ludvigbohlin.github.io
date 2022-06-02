@@ -305,7 +305,7 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#table-of-contents">Table of Contents</a></li>
-            <li><a href="#create-sources">Create sources</a></li>
+        <li class="main "><a href="#create-sources">Create sources</a></li>
         <li class="main "><a href="#frontpage-columns">Frontpage columns</a></li>
             <li><a href="#name">Name</a></li>
             <li><a href="#id">id</a></li>
@@ -338,6 +338,7 @@
             <li><a href="#load-saved-query">Load saved query</a></li>
             <li><a href="#preprocessor-directives">Preprocessor directives</a></li>
         <li class="main "><a href="#query-expressions">Query expressions</a></li>
+            <li><a href="#create-a-custom-source">create a custom source</a></li>
             <li><a href="#union">UNION</a></li>
         <li class="main "><a href="#standard-queries">Standard Queries</a></li>
             <li><a href="#centra-queries">Centra Queries</a></li>
@@ -347,9 +348,8 @@
                 <div class="col-md-9" role="main">
 
 <h1 id="table-of-contents">Table of Contents</h1>
-<pre><code>1. [Create sources](#create-sources)
-</code></pre>
 <ol>
+<li><a href="#create-sources">Create sources</a></li>
 <li><a href="#frontpage-columns">Frontpage columns</a><ol>
 <li><a href="#name">Name</a></li>
 <li><a href="#id">id</a></li>
@@ -415,7 +415,7 @@
 </li>
 </ol>
 <p><a href="#table-of-contents"><em>Back to top</em></a></p>
-<h2 id="create-sources">Create sources</h2>
+<h1 id="create-sources">Create sources</h1>
 <p>When the <a href="https://github.com/infobaleen/customer-success/blob/main/Documentation/Platform/Menu/Manage%20Data/Import%20Files.md">data is imported</a>, go to <code>Manage Data -&gt; Sources</code> and create a new source by clicking the purple plus sign as seen in the below image. </p>
 <ol>
 <li>Name the source <code>import_[source of data]_[type of data]</code> where <code>[source of data]</code> specifies where the data comes from (centra, voyado, etc), and the <code>[type of data]</code> specifies the data type (items, users, interactions, etc). </li>
@@ -571,14 +571,41 @@ resulting in this outcome
 <h1 id="query-expressions">Query expressions</h1>
 <p>you need to enclose variable names that contain other characters than letters and numbers with <code>backticks</code> ``,<br />
 this includes whitespace ' ', dot '.', etc...</p>
+<h2 id="create-a-custom-source">create a custom source</h2>
+<p>SELECT * FROM <code>raw: 
+id,item
+1,item1
+2,item2</code>
+this returns a table.</p>
 <p><a href="#table-of-contents"><em>Back to top</em></a></p>
 <h2 id="union">UNION</h2>
-<p>when making a union the columns need to have the same name and be in the same order</p>
+<p>A UNION merges two data sources by including all unique rows from both. When making a union the columns need to have the same name and be in the same order</p>
 <pre><code>SELECT * FROM `table 1`
 UNION
 SELECT * FROM `table 2`
 </code></pre>
 
+<p>if you have overlapping id rows in <code>table 1</code> and <code>table 2</code> the id in <code>table 1</code> will be saved and <code>table 2</code> will be discared.
+ex. 
+to try this, create a test source</p>
+<pre><code>select 
+incr(1,50) AS id,
+'table 1' AS item
+from `&lt;RANDOM_SOURCE&gt;`
+
+UNION
+select 
+incr(1,1) AS id,
+'table 2' AS item
+from `&lt;RANDOM_SOURCE&gt;`
+</code></pre>
+
+<p>then create a new source </p>
+<pre><code>SELECT * FROM `&lt;TEST_SOURCE&gt;`
+</code></pre>
+
+<p>this will show that all overlapping ids will have item from <code>table 1</code>.</p>
+<p>A UNION can also be suffixed by ALL, where UNION ALL will not discard duplicates, meaning much faster execution but leaves duplicate rows if they exist.</p>
 <p>SELECT * </p>
 <p>LEFT JOIN</p>
 <p>coalese</p>
