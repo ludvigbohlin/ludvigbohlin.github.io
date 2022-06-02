@@ -1,9 +1,0 @@
----
-layout: question
-title:  "Does ShimmerCat replace CDNs?"
-date:   2014-04-25 16:54:46
-author: ShimmerCat team
-categories:
-- question
----
-Yes. The goal of ShimmerCat is that you can get something better than a CDN in terms of final website speed, reliability and cost, and with no integration nightmares.
