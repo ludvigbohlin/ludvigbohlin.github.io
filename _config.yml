@@ -1,13 +1,12 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title: SHIMMERCAT - Faster e-commerce with AI and automation
-description: "ShimmerCat is a disruptive web accelerator solution that help e-commerce reduce loading times with 30-60%."
-analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "/ludvigbohlin.github.io" #important: start with / #/ludvigbohlin.github.io #prepends images, etc
-url: "" #"http://www.shimmercat.com"
+title: Infobaleen Customer Success Documentation
 
 # Build settings
+<<<<<<< HEAD
+markdown: kramdown
+=======
 markdown: kramdown
 category-list: [accelerator, regional, global, enterprise, display, add-on]
 permalink: /:categories/:title
@@ -134,3 +133,4 @@ testimonial:
     author: Rickard Sandberg
     position: CEO - EASY ONLINE STORES AB
 theme: jekyll-theme-minimal
+>>>>>>> 892d9279ee33930cddcd570afaf7ed9b0e7be42d
