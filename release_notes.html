@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Stack Multipurpose HTML Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site Description Here">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body class=" " data-smooth-scroll-offset='180'>
+        <a id="start"></a>
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <a href="index.html">
+                                <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
+                                <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu2;hidden-xs hidden-sm">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="index.html">
+                                    <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
+                                    <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-lg-11 col-md-12 text-center text-left-xs text-left-sm">
+                          <div class="bar__module">
+                                <ul class="menu-horizontal text-left">
+                                    <li >
+                                        <a href="dashboards.html"><span >Analyses</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bar__module">
+                                <ul class="menu-horizontal text-left">
+                                    <li >
+                                        <a href="recommendations.html"><span >Recommendations</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end module-->
+                            <div class="bar__module">
+                                <a class="btn btn--sm type--uppercase" href="pricing.html">
+                                    <span class="btn__text">
+                                        Pricing
+                                    </span>
+                                </a>
+                                <a class="btn btn--sm btn--primary type--uppercase" href="pricing.html">
+                                    <span class="btn__text">
+                                        Buy Now
+                                    </span>
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Infobaleen - Release Notes</h1>
+                            <ol class="breadcrumbs">
+                                <li>
+                                2022
+                                </li>
+                                <li>September</li>
+                            </ol>
+                            <hr>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+           <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                            <article>
+                                <span class="h4">v3.80.0</span>
+                                
+                                <div class="boxed bg--secondary boxed--lg boxed--border">
+                                    <p>
+                                        Here we list the amazing updates in this release
+                                    </p>
+                                </div>
+                                <h5>Features</h5>
+                                <p>
+                                   <ul>
+<li style="list-style-type: circle;">My account page </li>
+<li style="list-style-type: circle;">Platform logging (user activity, recommendations, etc)</li>
+<li style="list-style-type: circle;">Healthcheck</li>
+<li style="list-style-type: circle;">Rex profile round robin (AB test using url parameters)</li>
+<li style="list-style-type: circle;">[rex profile] add desc field and make name editable</li>
+<li style="list-style-type: circle;">Add config for hash join (max_records, max_data_size)</li>
+</ul>
+                                </p>
+                                <hr>
+                                <h5>UI/UX</h5>
+                                <p>
+<ul>
+<li style="list-style-type: circle;">show download items button only if there are items in ad </li>
+<li style="list-style-type: circle;">add ytd in daterangepicker</li>
+<li style="list-style-type: circle;">Use full-width for index pages and dashboard </li>
+<li style="list-style-type: circle;">Clarity tha IN selector is searchable</li>
+<li style="list-style-type: circle;">reset filter component when dimension changes  </li>
+<li style="list-style-type: circle;">Add shared state to dashboard elements. used to inspect state of other components. histogram check if a date range is set </li>
+<li style="list-style-type: circle;">increased default size for image grid </li>
+<li style="list-style-type: circle;">Add axis labels to histogram </li>
+<li style="list-style-type: circle;">sort segments element in dashboard desc on finished at </li>
+<li style="list-style-type: circle;">use multi select on list selector in dashboard (show control groups in same element as autotarget) </li>
+<li style="list-style-type: circle;">Add sortAsNumber for forcing numerical sort in barchart </li>
+<li style="list-style-type: circle;">Use background bar with 10% opacity as default in Table </li>
+<li style="list-style-type: circle;">Add title and subtitle option to Pivottables </li>
+<li style="list-style-type: circle;">heat map default in pivot table</li>
+<li style="list-style-type: circle;">use consistent user reference in auto targeting, remove unused scores </li>
+<li style="list-style-type: circle;">use 'Auto' as default time resolution for line chart </li>
+<li style="list-style-type: circle;">validate variables (secrets) in configuration</li>
+<li style="list-style-type: circle;">keep user when changing profile</li>
+</ul>
+                                </p>
+                                <hr>
+                                <h5>Internal</h5>
+                                <p>
+<ul>
+<li style="list-style-type: circle;">update go-mssqldb package </li>
+<li style="list-style-type: circle;">Toggle advanced settings in source create </li>
+<li style="list-style-type: circle;">selector for result in case of multiple results </li>
+<li style="list-style-type: circle;">validate that 2 sources can not use the same name on save </li>
+<li style="list-style-type: circle;">settings for index pages. to select columns </li>
+<li style="list-style-type: circle;">Toggle advanced settings in dashboard create </li>
+<li style="list-style-type: circle;">add xxhash32 and xxhash64 </li>
+<li style="list-style-type: circle;">add parameter for limiting orders by number of months when fetching centra orders </li>
+<li style="list-style-type: circle;">only fetch b2c centra order data </li>
+<li style="list-style-type: circle;">add order attributes data (shipping) to Centra integration </li>
+<li style="list-style-type: circle;">add fallback strategy (no purchase) for user in auto targeting </li>
+<li style="list-style-type: circle;">fetch additional customer demographics from Centra </li>
+<li style="list-style-type: circle;">better buffer handling in find-replace-reader </li>
+<li style="list-style-type: circle;">monitor updates (and azure blob store prototyping)</li>
+<li style="list-style-type: circle;">423 update to go119</li>
+<li style="list-style-type: circle;">fix rule example</li>
+<li style="list-style-type: circle;">improve api keys read page with format selector</li>
+<li style="list-style-type: circle;">utilities to list and remove files</li>
+</ul>
+                                </p>
+                                <hr>
+                                <h5>Bug fixes</h5>
+                                <p>
+<ul>
+<li style="list-style-type: circle;">Render metric correct in result page </li>
+<li style="list-style-type: circle;">Handle missing format or image (!?) in Image grid</li>
+<li style="list-style-type: circle;">Use format in y axis (line and histogram) </li>
+<li style="list-style-type: circle;">Fix not possible to search for user </li>
+<li style="list-style-type: circle;">Fix reset in brush plugin (fixes filter reset in histogram) </li>
+<li style="list-style-type: circle;">add download attribute to api keys and modified edit page </li>
+<li style="list-style-type: circle;">hide distribution text in AT if there are no items </li>
+<li style="list-style-type: circle;">use correct datatype for order campaign names from Carismar </li>
+<li style="list-style-type: circle;">fix broken dox links </li>
+<li style="list-style-type: circle;">automatically remove whitespace in end of source names </li>
+<li style="list-style-type: circle;">trim spaces in custom columns </li>
+<li style="list-style-type: circle;">make auth check case insensitive (email when logging in) </li>
+<li style="list-style-type: circle;">fix split bug on multiple characters </li>
+<li style="list-style-type: circle;">bugfix rexparams</li>
+<li style="list-style-type: circle;">fix documentation links and rendering</li>
+</ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+
+                  
+            <footer class="footer-3 text-center-xs space--xs ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img alt="Image" class="logo" src="img/logo-dark.png" />
+                            <ul class="list-inline list--hover">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <span class="type--fine-print">Get Started</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <span class="type--fine-print">help@stack.io</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-right text-center-xs">
+                            <ul class="social-list list-inline list--hover">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="socicon socicon-google icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="socicon socicon-twitter icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="socicon socicon-instagram icon icon--xs"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="type--fine-print">
+                                Supercharge your web workflow
+                            </p>
+                        </div>
+                        <div class="col-md-6 text-right text-center-xs">
+                            <span class="type--fine-print">&copy;
+                                <span class="update-year"></span> Stack Inc.</span>
+                            <a class="type--fine-print" href="#">Privacy Policy</a>
+                            <a class="type--fine-print" href="#">Legal</a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>
+        </div>
+        <!--<div class="loader"></div>-->
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
