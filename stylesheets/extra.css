@@ -1,0 +1,71 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+  --md-primary-fg-color:        #160E29;
+  --md-primary-fg-color--light: #160E29;
+  --md-primary-fg-color--dark:  #160E29;
+  --md-accent-fg-color:        #160E29;
+}
+
+/*.md-typeset p,h1,h2 {
+  font-family: 'Arial', sans-serif;
+}
+*/
+
+.md-nav--secondary {
+
+font-size: 13px;
+color: grey;
+
+}
+
+.md-icon {
+:material-format-align-left: 
+}
+
+p {
+	font-size: 15px;
+}
+
+  
+  /* for grapping the next to the left */
+[dir="ltr"] .md-footer__link--next{
+  margin-left: revert-layer; 
+
+}
+
+
+.md-sidebar__scrollwrap {
+  overflow: auto;
+  scrollbar-width:auto;
+}
+
+/* Demonstrate a "mostly customized" scrollbar
+ * (won't be visible otherwise if width/height is specified) */
+ .md-sidebar__scrollwrap::-webkit-scrollbar {
+  border-radius: 10px;
+  background-color: #aaa; /* or add it to the track */
+}
+
+/* Add a thumb */
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background: var(--md-primary-fg-color);
+  border-radius: 10px;
+  width: max-content;
+} 
+ 
+
+@media screen and (max-width: 76.1875em){
+  .md-tabs {
+    display: unset;
+  }
+}
+
+@media screen and (max-width: 40.1875em){
+  .md-tabs {
+    display: none;
+  }
+}
