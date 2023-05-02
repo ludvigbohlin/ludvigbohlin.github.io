@@ -1,0 +1,27 @@
+:root {
+  --md-primary-fg-color:        #160E29;
+  --md-primary-fg-color--light: #160E29;
+  --md-primary-fg-color--dark:  #160E29;
+  --md-accent-fg-color:        #160E29;
+}
+
+.md-typeset p,h1,h2 {
+  font-family: 'Arial', sans-serif;
+  /*font-weight: bold;*/
+}
+
+
+.md-nav--secondary {
+
+font-size: 13px;
+color: grey;
+
+}
+
+.md-icon {
+:material-format-align-left: 
+}
+
+p {
+	font-size: 15px;
+}
