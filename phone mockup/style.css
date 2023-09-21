@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: left;
+    resize: none;
+}
+.phonecase{
+    display: flex;
+    background: #555;
+    width: 300px;
+    height: 550px;
+    border-radius: 40px;
+    margin-left: 170px;
+    padding: 5px;
+    position: relative;
+    z-index: 10;
+    align-self: center;
+    box-shadow: 5px 2px 5px rgba(255, 255, 255, 0.5) inset,
+                -5px 2px 5px rgba(255, 255, 255, 0.5) inset;
+}
+.phonescreen{
+    display: flex;
+    background: #000;
+    width: 290px;
+    height: 540px;
+    position: absolute;
+    border-radius: 40px;
+    /* padding: 10px; */
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+}
+iframe{
+    
+    width: 280px;
+    height: 530px;
+    border-radius: 40px;
+    z-index: 30;
+}
+.buttons{
+    display: flex;
+    position: absolute;
+    top: 160px;
+    left: 100%;
+    width: 2px;
+    height: 50px;
+    background: #444;
+}
+.buttons-2{
+    display: flex;
+    position: absolute;
+    top: 130px;
+    right: 100%;
+    width: 2px;
+    height: 40px;
+    background: #444;
+}
+.buttons-3{
+    display: flex;
+    position: absolute;
+    top: 180px;
+    right: 100%;
+    width: 2px;
+    height: 40px;
+    background: #444;
+}
+.floating{
+    display: flex;
+    position: absolute;
+    background: #000;
+    height: 15px;
+    width: 100px;
+    border-radius: 30px;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 30;
+}
+.extra-text{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+.extra-text h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.extra-text h2{
+    margin-bottom: 10px;
+}
+.extra-text p{
+    margin-bottom: 20px;
+}
+.extra-text ol{
+    padding-left: 20px;
+}
+.extra-text ol li{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.extra-text ul{
+    padding-left: 20px;
+}
+.extra-text ul li{
+    padding-left: 0;
+}
+/* ARROWS */
+#arrows{
+    display: flex;
+    position: relative;
+    height: 550px;
+    width: 500px;
+    z-index: 40;
+}
+#arrows .arrow1{
+    position: absolute;
+    background: #000;
+    width: 150px;
+    height: 2px;
+    top: 98px;
+    right: -120px;
+}
+#arrows .arrow1 p{
+    position: absolute;
+    top: -8px;
+    right: -15px;
+    font-weight: 500;
+}
+
+#arrows .arrow2{
+    position: absolute;
+    background: #000;
+    width: 150px;
+    height: 2px;
+    top: 98px;
+    left: -120px;
+}
+#arrows .arrow2 p{
+    position: absolute;
+    top: -8px;
+    left: -15px;
+    font-weight: 500;
+}
+
+#arrows .arrow4{
+    position: absolute;
+    background: #000;
+    width: 220px;
+    height: 2px;
+    top: 145px;
+    right: -120px;
+}
+#arrows .arrow4 p{
+    position: absolute;
+    top: -8px;
+    right: -15px;
+    font-weight: 500;
+}
+
+#arrows .arrow3{
+    position: absolute;
+    background: #000;
+    width: 150px;
+    height: 2px;
+    top: 500px;
+    left: -110px;
+}
+#arrows .arrow3 p{
+    position: absolute;
+    top: -8px;
+    left: -15px;
+    font-weight: 500;
+}
+
+/* BUTTON */
+button{
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background: #449dd7;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+button:hover{
+    color: #449dd7;
+    background: #000;
+}
+
+/* HIDING ARROWS */
+#arrows.hidden{
+    display: none;
+}
+
+/* MOBILE OPTIMIZATION */
+@media only screen and (max-width: 600px) {
+    body{
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+        padding: 0 10px;
+    }
+    .extra-text{
+        width: 100%;
+    }
+    .phonecase{
+        margin: 10px 0;
+        height: 550px;
+        flex-shrink: 0;
+    }
+    #arrows .arrow1{
+        width: 60px;
+        right: -25px;
+    }
+    #arrows .arrow2{
+        width: 60px;
+        left: -20px;
+    }
+    #arrows .arrow3{
+        width: 50px;
+        left: -20px;
+    }
+    #arrows .arrow4{
+        width: 130px;
+        right: -25px;
+    }
+}
